@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html,
+body {
+  height: 100%;
+  font-family: 'Microsoft YaHei', 'iconfont';
+  font-size: 12px; }
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #333333; }
+
+ol,
+ul,
+li {
+  list-style-type: none; }
+
+input {
+  outline: none;
+  border: none;
+  background: none; }
+
+i {
+  font-style: normal; }
+
+/*border-radius*/
+body {
+  background: #F2F2F2; }
+
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -600px;
+  margin-top: -384px;
+  width: 1200px;
+  height: 768px;
+  background: #fff; }
+  .center .center-content {
+    overflow: hidden;
+    padding: 100px;
+    width: 1000px;
+    font-size: 14px;
+    color: #333; }
+    .center .center-content h4 {
+      color: #000; }
+    .center .center-content .classify ul {
+      margin-top: 20px;
+      overflow: hidden; }
+      .center .center-content .classify ul p {
+        float: left;
+        color: #666;
+        line-height: 30px; }
+      .center .center-content .classify ul li {
+        float: left;
+        padding: 0 5px;
+        height: 28px;
+        max-width: 120px;
+        border: 1px solid #999;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 30px; }
+      .center .center-content .classify ul span {
+        float: left;
+        margin: 0 5px;
+        line-height: 30px; }
+      .center .center-content .classify ul .alter {
+        float: left;
+        margin-left: 10px;
+        color: #00aaee;
+        line-height: 30px; }
+        .center .center-content .classify ul .alter i {
+          margin: 0 5px; }
+        .center .center-content .classify ul .alter em {
+          font-style: normal;
+          cursor: pointer; }
+    .center .center-content .append {
+      overflow: hidden;
+      margin: 20px 0 0 50px;
+      width: 98px;
+      height: 28px;
+      border: 1px solid #00aaee;
+      color: #00aaee;
+      line-height: 25px;
+      cursor: pointer; }
+      .center .center-content .append i {
+        margin: 0 5px 0 8px;
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        border: 1px solid #00aaee;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -o-border-radius: 50%;
+        -ms-border-radius: 50%;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 16px;
+        font-weight: bolder; }
+      .center .center-content .append span {
+        vertical-align: middle; }
+
+.cover, .cover-alter {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -150px;
+  width: 600px;
+  height: 300px;
+  background: #fff;
+  border: 1px solid #999; }
+  .cover .cover-top, .cover .cover-alter-top, .cover-alter .cover-top, .cover-alter .cover-alter-top {
+    width: 100%;
+    height: 40px;
+    background: #00aaee;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px; }
+    .cover .cover-top span, .cover .cover-alter-top span, .cover-alter .cover-top span, .cover-alter .cover-alter-top span {
+      float: right;
+      margin-right: 10px;
+      font-size: 20px;
+      cursor: pointer; }
+  .cover ul, .cover-alter ul {
+    overflow: hidden;
+    padding: 25px 25px 0 25px; }
+    .cover ul .cover-row, .cover ul .cover-alter-row, .cover-alter ul .cover-row, .cover-alter ul .cover-alter-row {
+      float: left;
+      overflow: hidden;
+      margin: 0 61px 20px 0; }
+      .cover ul .cover-row .sky, .cover ul .cover-alter-row .sky, .cover-alter ul .cover-row .sky, .cover-alter ul .cover-alter-row .sky {
+        float: left;
+        width: 14px;
+        height: 30px; }
+      .cover ul .cover-row span, .cover ul .cover-alter-row span, .cover-alter ul .cover-row span, .cover-alter ul .cover-alter-row span {
+        float: left;
+        font-size: 14px;
+        color: #333;
+        line-height: 30px;
+        text-align: right; }
+      .cover ul .cover-row i, .cover ul .cover-alter-row i, .cover-alter ul .cover-row i, .cover-alter ul .cover-alter-row i {
+        float: left;
+        margin-top: 10px;
+        margin-right: 5px;
+        color: #FF000D;
+        font-size: 20px;
+        line-height: 14px; }
+      .cover ul .cover-row select, .cover ul .cover-alter-row select, .cover-alter ul .cover-row select, .cover-alter ul .cover-alter-row select {
+        float: left;
+        padding: 0 10px;
+        width: 180px;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid #999; }
+    .cover ul .cover-row:nth-child(2n), .cover ul .cover-alter-row:nth-child(2n), .cover-alter ul .cover-row:nth-child(2n), .cover-alter ul .cover-alter-row:nth-child(2n) {
+      margin: 0 0 20px 0; }
+  .cover .tips, .cover .tips-alter, .cover-alter .tips, .cover-alter .tips-alter {
+    padding: 0 20px 20px 20px;
+    color: #999; }
+  .cover .tips.h, .cover .tips-alter.h, .cover-alter .tips.h, .cover-alter .tips-alter.h {
+    color: #FF000D; }
+  .cover .cover-bottom, .cover .cover-alter-bottom, .cover-alter .cover-bottom, .cover-alter .cover-alter-bottom {
+    padding: 0 25px;
+    text-align: right;
+    font-size: 14px;
+    color: #00aaee; }
+    .cover .cover-bottom i, .cover .cover-alter-bottom i, .cover-alter .cover-bottom i, .cover-alter .cover-alter-bottom i {
+      margin: 0 15px; }
+    .cover .cover-bottom em, .cover .cover-alter-bottom em, .cover-alter .cover-bottom em, .cover-alter .cover-alter-bottom em {
+      padding: 5px 10px;
+      font-style: normal;
+      cursor: pointer;
+      border: 1px solid #fff;
+      cursor: pointer; }
+      .cover .cover-bottom em:hover, .cover .cover-alter-bottom em:hover, .cover-alter .cover-bottom em:hover, .cover-alter .cover-alter-bottom em:hover {
+        border: 1px solid #00aaee; }

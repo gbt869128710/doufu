@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html,
+body {
+  height: 100%;
+  font-family: 'Microsoft YaHei', 'iconfont';
+  font-size: 12px; }
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #333333; }
+
+ol,
+ul,
+li {
+  list-style-type: none; }
+
+input {
+  outline: none;
+  border: none;
+  background: none; }
+
+i {
+  font-style: normal; }
+
+/*border-radius*/
+.content {
+  margin: 0 auto;
+  width: 1200px;
+  height: auto; }
+  .content .seek {
+    margin-left: 20px;
+    height: 60px; }
+    .content .seek i {
+      line-height: 60px;
+      font-size: 18px;
+      color: #333333; }
+  .content .seek-all {
+    float: right;
+    margin-right: 316px;
+    width: 563px;
+    height: 40px;
+    font-size: 14px; }
+    .content .seek-all a {
+      display: inline-block;
+      padding: 0 25px;
+      height: 40px;
+      color: #333333;
+      line-height: 40px; }
+    .content .seek-all a:nth-child(3) {
+      font-size: 18px;
+      background: #00AAEE;
+      color: #fff;
+      border-radius: 20px;
+      -moz-border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -o-border-radius: 20px;
+      -ms-border-radius: 20px; }
+  .content .content-enroll {
+    position: relative;
+    margin-top: 100px;
+    padding: 0 100px 40px 100px;
+    width: 1000px;
+    background: #fff;
+    overflow: hidden; }
+    .content .content-enroll h1 {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 30px; }
+    .content .content-enroll .issue {
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      font-size: 14px;
+      color: #666666; }
+      .content .content-enroll .issue span {
+        margin: 0 15px; }
+    .content .content-enroll .row {
+      font-size: 18px;
+      color: #333;
+      text-indent: 36px; }
+    .content .content-enroll ul li {
+      margin: 20px 0; }
+      .content .content-enroll ul li i {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #ff9700;
+        transform: rotateZ(135deg);
+        transition: 0.3s all linear; }
+      .content .content-enroll ul li span {
+        font-size: 18px;
+        color: #333333;
+        cursor: pointer;
+        margin-left: 16px; }
+      .content .content-enroll ul li p {
+        padding: 10px 0 0 30px;
+        color: #666;
+        font-size: 14px; }
+      .content .content-enroll ul li ul {
+        margin-left: 20px; }
+        .content .content-enroll ul li ul li div {
+          overflow: hidden; }
+          .content .content-enroll ul li ul li div i {
+            float: left;
+            margin-top: 7px;
+            width: 5px;
+            height: 5px;
+            background: #00aaee;
+            transform: rotateZ(0deg); }
+          .content .content-enroll ul li ul li div span {
+            float: left;
+            width: 970px;
+            font-size: 14px;
+            color: #666666;
+            cursor: pointer;
+            margin-left: 5px; }
+        .content .content-enroll ul li ul li p {
+          padding: 10px 0 0 10px;
+          color: #666;
+          font-size: 14px; }
+    .content .content-enroll ul li:nth-child(1) li span {
+      color: #333333; }
+  .content .content-need {
+    margin: 46px auto;
+    width: 620px;
+    height: 42px;
+    font-size: 14px;
+    color: #333333; }
+    .content .content-need span {
+      line-height: 42px; }
+    .content .content-need input {
+      width: 120px;
+      height: 40px;
+      border: 1px solid #ff9700;
+      cursor: pointer; }
+    .content .content-need input.h {
+      background: #ff9700;
+      color: #fff; }
+    .content .content-need .useful {
+      margin: 0 70px;
+      border: 1px solid #00aaee; }
+    .content .content-need .useful.h {
+      background: #00aaee;
+      color: #fff; }
+  .content .phone {
+    text-align: center;
+    font-size: 14px;
+    color: #333333; }
+  .content .piece {
+    overflow: hidden;
+    width: 1000px;
+    margin: 0 auto 40px auto; }
+    .content .piece .piece-left, .content .piece .piece-right {
+      float: left;
+      color: #666666; }
+      .content .piece .piece-left span, .content .piece .piece-right span {
+        font-size: 40px;
+        vertical-align: middle; }
+      .content .piece .piece-left i, .content .piece .piece-right i {
+        display: inline-block;
+        height: 40px;
+        font-size: 14px;
+        line-height: 48px;
+        vertical-align: middle; }
+    .content .piece .piece-right {
+      float: right; }

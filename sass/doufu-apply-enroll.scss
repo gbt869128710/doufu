@@ -1,0 +1,275 @@
+@import "base";
+body{
+    background: #F2F2F2;
+}
+header{
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+    background: url("../images/20170804174439.png") center center no-repeat;
+    .logo{
+        margin: 0 auto;
+        width: 1200px;
+        height: 70px;
+        img{
+            margin: 15px 10px 0 0;
+            float: left;
+            width: 110px;
+            height: 46px;
+        }
+    }
+}
+.center{
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    margin-left: -600px;
+    margin-bottom: 200px;
+    width: 1200px;
+    background: #fff;
+    ul{
+        height: 60px;
+        .fillout{
+            float: left;
+            width: 299px;
+            height: 59px;
+            border-right: 1px solid #999999;
+            border-bottom: 1px solid #999999;
+            background: #E6E6E6;
+            color: #333333;
+            font-size: 18px;
+            text-align: center;
+            line-height: 58px;
+        }
+        .fillout:nth-child(1){
+            border-right: 1px solid #ff9700;
+            border-bottom: 1px solid #ff9700;
+            background: #ff9700;
+            color: #fff;
+        }
+        .fillout:nth-child(4){
+            border-right: 1px solid #E6E6E6;
+        }
+    }
+    .center-enroll{
+        margin: 60px auto;
+        width: 315px;
+        height: 380px;
+        .enroll-phone,.enroll-code{
+            height: 30px;
+            margin-bottom: 20px;
+            .sky{
+                float: left;
+                width: 13px;
+                height: 30px;
+            }
+            i{
+                float: left;
+                margin-right: 5px;
+                color: #FF000D;
+                font-size: 20px;
+                line-height: 36px;
+            }
+            span{
+                float: left;
+                font-size: 14px;
+                color: #333;
+                line-height: 30px;
+            }
+            .phone{
+                float: right;
+                padding: 0 10px;
+                width: 220px;
+                height: 28px;
+                line-height: 28px;
+                border: 1px solid #999;
+            }
+            .auth{
+                float: right;
+                width: 240px;
+                height: 30px;
+                .auth-code{
+                    float: left;
+                    width: 100px;
+                    height: 28px;
+                    padding: 0 10px;
+                    border: 1px solid #999;
+                }
+                .gain{
+                    float: right;
+                    width: 100px;
+                    height: 30px;
+                    border: 1px solid #999;
+                    color: #999;
+                    cursor: pointer;
+                }
+            }
+            #slider {
+                float: right;
+  width: 242px;
+  height: 30px;
+  position: relative;
+  border-radius: 2px;
+  background-color: #dae2d0;
+  overflow: hidden;
+  text-align: center;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+#slider_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #7AC23C;
+  z-index: 1;
+}
+
+#label {
+  width: 46px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #cccccc;
+  background: #fff;
+  z-index: 3;
+  cursor: move;
+  color: #ff9e77;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+#labelTip {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  font-family: 'Microsoft Yahei', serif;
+  color: #787878;
+  line-height: 28px;
+  text-align: center;
+  z-index: 2;
+}
+        }
+        .enroll-code{
+            display: none;
+        }
+        .enroll-cipher{
+            margin-left: -15px;
+        }
+        .enroll-phone-false,.enroll-code-false,.auth-code-false{
+            display:none;
+            margin: -15px 0 5px 80px;
+            color: #FF000D;
+            font-size: 14px;
+            .enroll-phone-red{
+                float: left;
+                margin: 3px;
+                width: 14px;
+                height: 14px;
+                background: #FF000D;
+                @include br4(50%);
+                color: #fff;
+                text-align: center;
+                line-height: 14px;
+                font-weight: bold;
+            }
+        }
+        .enroll-bottom-breath{
+            margin: 0 auto;
+            margin-bottom: 20px;
+            width: 235px;
+            height: 20px;
+            .enroll-select{
+                margin-top: 4px;
+                float: left;
+                width: 12px;
+                height: 12px;
+                border: 1px solid #E6E6E6;
+                color: transparent;
+                text-align: center;
+                line-height: 12px;
+                cursor: pointer;
+            }
+            .enroll-select.h{
+                background: #00aaee;
+                color: #fff;
+            }
+            p{
+                margin-left: 22px;
+                color: #333;
+                font-size: 14px;
+                a{
+                    color: #00aaee;
+                }
+            }
+        }
+        .choose{
+            margin-left: 80px;
+            width: 160px;
+            height: 30px;
+            background: #00aaee;
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+}
+.cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    .cover-center{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -350px;
+        margin-top: -200px;
+        width: 700px;
+        height: 400px;
+        background: #fff;
+        .cover-top{
+            width: 700px;
+            height: 40px;
+            background: #00aaee;
+            font-size: 16px;
+            text-align: center;
+            color: #fff;
+            line-height: 40px;
+        }
+        .cover-content{
+            margin: 20px auto;
+            padding: 15px;
+            width: 570px;
+            height: 226px;
+            border: 1px solid #666666;
+            color: #666666;
+            line-height: 22px;
+            span{
+                color: #FF0000;
+            }
+        }
+        .cover-bottom{
+            margin: 0 auto;
+            width: 220px;
+            height: 30px;
+            color: #666;
+            input{
+                width: 100px;
+                height: 30px;
+                background: #00aaee;
+                font-size: 14px;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+}

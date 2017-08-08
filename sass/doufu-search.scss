@@ -1,0 +1,75 @@
+@import "base";
+
+.content{
+    margin: 0 auto 20px auto;
+    width: 1200px;
+    height: auto;
+    .seek{
+        margin-top: 10px;
+        i{
+            font-size: 18px;
+            color: #333333;
+        }
+        span{
+            margin-left: 10px;
+            display: inline-block;
+            padding: 0 15px;
+            height: 28px;
+            border: 1px solid #00aaee;
+            color: #00aaee;
+            line-height: 28px;
+            @include br4(15px);
+            cursor: pointer;
+            background: #fff;
+        }
+    }
+    .seek-all{
+        margin:20px 0;
+        font-size: 14px;
+        span{
+            color: #808080;
+        }
+        i{
+            color: #FF9700; 
+        }
+    }
+    ul{
+        overflow: hidden;
+        li{
+            float: left;
+            margin: 0 20px 20px 0;
+            width: 285px;
+            height: 340px;
+            background: #fff;
+            img{
+                width: 285px;
+                height: 285px;
+            }
+            p{
+                height: 55px;
+                color: #808080;
+                line-height: 55px;
+                span{
+                    float: left;
+                    margin-left: 15px;
+                    font-size: 16px;
+                }
+                 span:nth-child(2){
+                    float: right;
+                    margin-right: 10px;
+                    color: #FF9700; 
+                }
+            }
+        }
+        li:nth-child(4n){
+            margin: 0 0 20px 0;
+        }
+    }
+    .nominate{
+        margin: 20px 0;
+        i{
+            font-size: 18px;
+            color: #333333;
+        }
+    }
+}

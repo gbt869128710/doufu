@@ -1,0 +1,111 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-apply-enroll.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="">
+    </div>
+</header>
+<div class="center">
+    <ul>
+        <li class="fillout">
+            ① 填写账号信息
+        </li>
+        <li class="fillout">
+            ②选择服务商类型
+        </li>
+        <li class="fillout">
+            ③ 完善申请信息
+        </li>
+        <li class="fillout">
+            ④完成注册等待审核
+        </li>
+    </ul>
+    <ul class="center-enroll">
+        <li class="enroll-phone">
+            <span>手机号：</span>
+            <i>*</i>
+            <input type="text" class="phone phone-code" placeholder="请输入手机号" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" >
+        </li>
+        <li class="enroll-phone-false">请输入手机号
+        <div class="enroll-phone-red">!</div>
+        </li>
+        <li class="enroll-phone enroll-cipher">
+            <span>拖动验证：</span>
+            <i>*</i>
+            <div id="demo">
+                <div id="slider">
+                    <div id="slider_bg"></div>
+                    <span id="label">>></span> <span id="labelTip">拖动滑块发送验证</span>
+                </div>
+            </div>
+        </li>
+        <li class="enroll-code enroll-phone">
+            <span>验证码：</span>
+            <i>*</i>
+            <div class="auth">
+                <input type="text" class="auth-code phone" maxlength='11' placeholder="请输入验证码" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" >
+                <input type="button" value="60s后重新发送" class="gain" disabled>
+            </div>
+        </li>
+        <li class="auth-code-false">
+        <span>验证码输入不正确</span>
+        <div class="enroll-phone-red">!</div>
+        </li>
+        <li class="enroll-phone">
+            <a class="sky"></a>
+            <span>密码：</span>
+            <i>*</i>
+            <input type="password" class="phone cipher" placeholder="请输入密码" maxlength="24" disabled>
+        </li>
+        <li class="enroll-phone enroll-cipher">
+            <span>确认密码：</span>
+            <i>*</i>
+            <input type="password" class="phone cipher-code" placeholder="请确认密码" maxlength="24" disabled>
+        </li>
+        <li class="enroll-code-false">
+        <span>密码输入不一致</span>
+        <div class="enroll-phone-red">!</div>
+        </li>
+        <div class="enroll-bottom-breath">
+            <div class="enroll-select">&#xe63f;</div>
+            <p class="enroll-deal">
+                我已阅读并同意《<a href="">用户服务协议</a>》
+            </p>
+        </div>
+        <input type="button" value="选择服务商类型" class="choose">
+    </ul>
+</div>
+<div class="cover">
+    <div class="cover-center">
+        <div class="cover-top">使用前须知</div>
+        <p class="cover-content">
+            豆腐网致力于打造真实、合法、有效的互联网企业服务平台。为了更好的保障你和广大豆腐网用户的合法权益，请你认真填写以下登记信息。<br/>
+用户信息登记审核通过后：<br/>
+1. 你可以依法享有本豆腐网服务商账号所产生的权利和收益；<br/>
+2. 你将对本服务帐号的所有行为承担全部责任；<br/>
+3. 你的注册信息将在法律允许的范围内向豆腐网用户展示；<br/>
+4. 人民法院、检察院、公安机关等有权机关可向豆腐网依法调取你的注册信息等。<br/><br/>
+<span>若同一家企业内的多位用户同时使用豆腐网，则每位用户需重新注册，不支持企业账户认领。</span><br/>
+感谢您的配合！
+        </p>
+        <div class="cover-bottom">
+            我已阅读完毕，确认
+            <input type="button" value="登记用户信息" class="register">
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script></script>
+<script src="js/doufu-apply-enroll.js"></script>
+<script src="js/jquery.slideunlock.js"></script>

@@ -1,0 +1,273 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/doufu-apply-perfect.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="">
+    </div>
+</header>
+<div class="center">
+    <ul>
+        <li class="fillout">
+            ① 填写账号信息
+        </li>
+        <li class="fillout">
+            ②选择服务商类型
+        </li>
+        <li class="fillout">
+            ③ 完善申请信息
+        </li>
+        <li class="fillout">
+            ④完成注册等待审核
+        </li>
+    </ul>
+    <ul class="center-perfect">
+        <li class="subject">主体信息登记</li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">选择主体类型：</span>
+            <i>*</i>
+            <input type="radio" name="sex" class="perfect-row-radio" checked>
+            <span class="perfect-row-right firm">企业</span>
+            <input type="radio" name="sex" class="perfect-row-radio">
+            <span class="perfect-row-right">个体工商户</span>
+        </li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">企业名称：</span>
+            <i>*</i>
+            <input type="text" class="phone">
+        </li>
+        <li class="perfect-code-hint">
+        需与当地政府颁发的商业许可证书或企业注册证上的企业名称完全一致信息审核审核成功后，企业名称不可修改。
+        </li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">上传营业执照：</span>
+            <i>*</i>
+            <div class="permit-all">
+                <p class="plus">+</p>
+                <p class="plus-file">上传凭证</p>
+                <div id="addCommodityIndex">
+                    <div class="input-group row">
+                        <div class="col-sm-9 big-photo">
+                            <div id="preview">
+                                <img id="imghead" border="0" src="" width="80" height="80" onclick="$('#previewImg').click();">
+                             </div>         
+                            <input type="file" onchange="previewImage(this,'imghead')" style="display: none;" id="previewImg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">营业执照注册号：</span>
+            <i>*</i>
+            <input type="text" class="phone">
+        </li>
+        <li class="perfect-code-hint">
+        请输入15位营业执照注册号或18位的统一社会信用代码
+        </li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">公司联系电话：</span>
+            <i>*</i>
+            <input type="text" class="phone" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" >
+        </li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">许可经营范围：</span>
+            <i class="sky"></i>
+            <textarea name="" id="" cols="30" rows="10" placeholder="请填写退款说明（非必填）" maxlength="200"></textarea>
+        </li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">企业许可证或资质证书上传：</span>
+            <i>*</i>
+            <div class="permit-all">
+                <p class="plus">+</p>
+                <p class="plus-file">上传凭证</p>
+                <div id="addCommodityIndex">
+                    <div class="input-group row">
+                        <div class="col-sm-9 big-photo">
+                            <div id="preview-permit">
+                                <img id="imghead-permit" border="0" src="" width="80" height="80" onclick="$('#previewImg-permit').click();">
+                             </div>         
+                            <input type="file" onchange="previewImage(this,'imghead-permit')" style="display: none;" id="previewImg-permit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="subject">服务者信息登记</li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">服务者身份证姓名：</span>
+            <i>*</i>
+            <input type="text" class="phone">
+        </li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">服务者身份证号码：</span>
+            <i>*</i>
+            <input type="text" class="phone">
+        </li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">身份证正反面：</span>
+            <i>*</i>
+            <div class="permit-all">
+                <p class="plus">+</p>
+                <p class="plus-file">身份证正面</p>
+                <div id="addCommodityIndex">
+                    <div class="input-group row">
+                        <div class="col-sm-9 big-photo">
+                            <div id="preview-frontage">
+                                <img id="imghead-frontage" border="0" src="" width="80" height="80" onclick="$('#previewImg-frontage').click();">
+                             </div>         
+                            <input type="file" onchange="previewImage(this,'imghead-frontage')" style="display: none;" id="previewImg-frontage">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="permit-all">
+                <p class="plus">+</p>
+                <p class="plus-file">身份证反面</p>
+                <div id="addCommodityIndex">
+                    <div class="input-group row">
+                        <div class="col-sm-9 big-photo">
+                            <div id="preview-contrary">
+                                <img id="imghead-contrary" border="0" src="" width="80" height="80" onclick="$('#previewImg-contrary').click();">
+                             </div>         
+                            <input type="file" onchange="previewImage(this,'imghead-contrary')" style="display: none;" id="previewImg-contrary">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="perfect-code-hint">
+        格式为：jpg,png
+        </li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">服务者从业资格：</span>
+            <i>*</i>
+            <div class="permit-all">
+                <p class="plus">+</p>
+                <p class="plus-file">上传凭证</p>
+                <div id="addCommodityIndex">
+                    <div class="input-group row">
+                        <div class="col-sm-9 big-photo">
+                            <div id="preview-status">
+                                <img id="imghead-status" border="0" src="" width="80" height="80" onclick="$('#previewImg-status').click();">
+                             </div>         
+                            <input type="file" onchange="previewImage(this,'imghead-status')" style="display: none;" id="previewImg-status">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">官方认证申请公函上传：</span>
+            <i>*</i>
+            <div class="attachment-all">
+                <p class="attachment-file">点此上传附件</p>
+                <input type="file" class="attachment">
+            </div>
+            <a href="" class="download">申请公函模板下载</a>
+        </li>
+        <li class="perfect-row">
+            <span class="perfect-row-left">邮箱：</span>
+            <i>*</i>
+            <input type="email" class="phone ">
+        </li>
+        <li class="perfect-row">
+             <span class="perfect-row-left">拖动验证：</span>
+            <i>*</i>
+            <div id="demo">
+                <div id="slider">
+                    <div id="slider_bg"></div>
+                    <span id="label">>></span> <span id="labelTip">拖动滑块发送验证</span>
+                </div>
+            </div>
+        </li>
+        <li class="perfect-row  enroll-cipher">
+            <span class="perfect-row-left">验证码：</span>
+            <i>*</i>
+            <div class="auth">
+                <input type="text" class="auth-code phone" maxlength='6' placeholder="输入邮箱验证码" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" >
+                <input type="button" value="60s后重新发送" class="gain" disabled>
+            </div>
+        </li>
+        <li class="auth-code-false">
+        <span>验证码输入不正确</span>
+        <div class="enroll-phone-red">!</div>
+        </li>
+        <li class="perfect-code-hint">
+        <input type="button" value="提交审核" class="choose">
+        <div class="enroll-phone-red">!</div>
+        <span>请填写完整</span>
+        </li>
+        <li class="enroll-bottom-breath">
+            <a href="doufu-apply-choose.html">重新选择服务商类型</a>
+        </li>
+    </ul>
+</div>
+</body>
+
+</html>
+<script src="js/jquery1.8.3.min.js"></script></script>
+<script src="js/doufu-apply-perfect.js"></script>
+<script src="js/jquery.slideunlock.js"></script>
+<script>
+      //图片上传预览    IE是用了滤镜。
+        function previewImage(file,imgid)
+        {
+          var MAXWIDTH  = 80; 
+          var MAXHEIGHT = 80;
+//          var div = document.getElementById('preview');
+          if (file.files && file.files[0])
+          {
+//              div.innerHTML ='<img id=imghead onclick=$("#previewImg").click()>';
+              var img = document.getElementById(imgid);
+              img.onload = function(){
+                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                img.width  =  rect.width;
+                img.height =  rect.height;
+//                 img.style.marginLeft = rect.left+'px';
+                img.style.marginTop = rect.top+'px';
+              }
+              var reader = new FileReader();
+              reader.onload = function(evt){img.src = evt.target.result;}
+              reader.readAsDataURL(file.files[0]);
+          }
+          else //兼容IE
+          {
+            var sFilter='filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+            file.select();
+            var src = document.selection.createRange().text;
+            div.innerHTML = '<img id=imghead>';
+            var img = document.getElementById('imghead');
+            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+            status =('rect:'+rect.top+','+rect.left+','+rect.width+','+rect.height);
+            div.innerHTML = "<div id=divhead style='width:"+rect.width+"px;height:"+rect.height+"px;margin-top:"+rect.top+"px;"+sFilter+src+"\"'></div>";
+          }
+        }
+        function clacImgZoomParam( maxWidth, maxHeight, width, height ){
+            var param = {top:0, left:0, width:width, height:height};
+            if( width>maxWidth || height>maxHeight ){
+                rateWidth = width / maxWidth;
+                rateHeight = height / maxHeight;
+                
+                if( rateWidth > rateHeight ){
+                    param.width =  maxWidth;
+                    param.height = Math.round(height / rateWidth);
+                }else{
+                    param.width = Math.round(width / rateHeight);
+                    param.height = maxHeight;
+                }
+            }
+            param.left = Math.round((maxWidth - param.width) / 2);
+            param.top = Math.round((maxHeight - param.height) / 2);
+            return param;
+        }
+    </script>

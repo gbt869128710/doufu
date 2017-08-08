@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Microsoft YaHei', 'iconfont';
+//    font-size: 62.5%;
+    font-size: 12px;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: #333333;
+}
+
+ol,
+ul,
+li {
+    list-style-type: none;
+}
+
+input {
+    outline: none;
+    border: none;
+	background: none;
+}
+i{
+    font-style: normal;
+}
+@mixin br4($val:4px) {
+    border-radius: $val;
+    -moz-border-radius: $val;
+    -webkit-border-radius: $val;
+    -o-border-radius: $val;
+    -ms-border-radius: $val;
+}
+
+
+/*border-radius*/
+
+@mixin br( $der1,
+$der2,
+$val:4px) {
+    border-radius: $val;
+    -moz-border-radius: $val;
+    -webkit-border-radius: $val;
+    -o-border-radius: $val;
+    -ms-border-radius: $val;
+    border-#{$der1}-#{$der2}-radius: 4px;
+}

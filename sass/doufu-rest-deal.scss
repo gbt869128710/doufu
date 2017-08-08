@@ -1,0 +1,171 @@
+@import "base";
+
+.content{
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+    .seek{
+        margin-left: 20px;
+        height: 60px;
+        i{
+            line-height: 60px;
+            font-size: 18px;
+            color: #333333;
+        }
+    }
+    .seek-all{
+        float: right;
+        margin-right: 424px;
+        width: 563px;
+        height: 40px;
+        font-size: 14px;
+        a{
+            display: inline-block;
+            padding: 0 25px;
+            height: 40px;
+            color: #333333;
+            line-height: 40px;
+        }
+        a:nth-child(4){
+            font-size: 18px;
+            background: #00AAEE;
+            color: #fff;
+            @include br4(20px);
+        }
+    }
+    .content-enroll{ 
+        position: relative;
+        margin-top: 100px;
+        padding: 0 100px 40px 100px;
+        width: 1000px;
+        background: #fff;
+        overflow: hidden;
+        h1{
+            margin-top: 60px;
+            text-align: center;
+            font-size: 30px;
+        }
+        .issue{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 14px;
+            color: #666666;
+            span{
+                margin: 0 15px;
+            }
+        }
+        ul{
+            li{
+                margin: 20px 0;
+                i{
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    background: #ff9700;
+                    transform: rotateZ(135deg);
+                    transition: 0.3s all linear; 
+                }
+                span{
+                    font-size: 18px;
+                    color: #333333;
+                    cursor: pointer;
+                    margin-left: 16px;
+//                    &:hover{
+//                        color: #b76800;
+//                    }
+                }
+                p{
+                    padding: 10px 0 0 30px;
+                    color: #666;
+                    font-size: 14px;
+                }
+                ul{
+                    margin-left: 20px;
+                    li{
+                        div{
+                            overflow: hidden;
+                            i{
+                                float: left;
+                                margin-top: 7px;
+                                width: 5px;
+                                height: 5px;
+                                background: #00aaee;
+                                transform: rotateZ(0deg);
+                            }
+                            span{
+                                float: left;
+                                width: 970px;
+                                font-size: 14px;
+                                color: #666666;
+                                cursor: pointer;
+                                margin-left: 5px;
+                            }
+                        }
+                        p{
+                            padding: 10px 0 0 10px;
+                            color: #666;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .content-need{
+        margin: 46px auto;
+        width: 620px;
+        height: 42px;
+        font-size: 14px;
+        color: #333333;
+        span{
+            line-height: 42px;
+        }
+        input{
+            width: 120px;
+            height: 40px;
+            border: 1px solid #ff9700;
+            cursor: pointer;
+        }
+        input.h{
+            background: #ff9700;
+            color: #fff;
+        }
+        .useful{
+            margin: 0 70px;
+            border: 1px solid #00aaee;
+        }
+        .useful.h{
+            background: #00aaee;
+            color: #fff;
+        }
+    }
+    .phone{
+        text-align: center;
+        font-size: 14px;
+        color: #333333;
+    }
+    .piece{
+        overflow: hidden;
+        width: 1000px;
+        margin:0 auto 40px auto;
+        .piece-left,.piece-right{
+            float: left;
+            color: #666666;
+            span{
+                font-size: 40px;
+                vertical-align: middle;
+            }
+            i{
+                display: inline-block;
+                height: 40px;
+                font-size: 14px;
+                line-height: 48px;
+                vertical-align: middle;
+            }
+        }
+        .piece-right{
+            float: right;
+        }
+    }
+}

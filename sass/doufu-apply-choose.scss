@@ -1,0 +1,218 @@
+@import "base";
+body{
+    background: #F2F2F2;
+}
+header{
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+    background: url("../images/20170804174439.png") center center no-repeat;
+    .logo{
+        margin: 0 auto;
+        width: 1200px;
+        height: 70px;
+        img{
+            margin: 15px 10px 0 0;
+            float: left;
+            width: 110px;
+            height: 46px;
+        }
+    }
+}
+.center{
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    margin-left: -600px;
+    margin-bottom: 200px;
+    width: 1200px;
+    background: #fff;
+    .center-top{
+        height: 60px;
+        .fillout{
+            float: left;
+            width: 299px;
+            height: 59px;
+            border-right: 1px solid #999999;
+            border-bottom: 1px solid #999999;
+            background: #E6E6E6;
+            color: #333333;
+            font-size: 18px;
+            text-align: center;
+            line-height: 58px;
+        }
+        .fillout:nth-child(1){
+            border-right: 1px solid #00aaee;
+            border-bottom: 1px solid #00aaee;
+            background: #00aaee;
+            color: #fff;
+        }
+        .fillout:nth-child(2){
+            border-right: 1px solid #ff9700;
+            border-bottom: 1px solid #ff9700;
+            background: #ff9700;
+            color: #fff;
+        }
+        .fillout:nth-child(4){
+            border-right: 1px solid #E6E6E6;
+        }
+    }
+     .center-choose{
+        margin: 60px auto;
+        width: 578px;
+        height: 220px;
+        .choose-row{
+            margin-bottom: 20px;
+            position: relative;
+            i{
+                float: left;
+                margin-right: 5px;
+                color: #FF000D;
+                font-size: 20px;
+                line-height: 36px;
+            }
+            
+            .choose-row-left{
+                float: left;
+                width: 190px;
+                font-size: 14px;
+                color: #333;
+                line-height: 30px;
+                text-align: right;
+            }
+            .phone-select,.phone-check{
+                float: left;
+                padding: 0 10px;
+                width: 220px;
+                height: 28px;
+                line-height: 28px;
+                border: 1px solid #999;
+                outline: none;
+                .trigon{
+                    margin-top: 12px;
+                    float: right;
+                    width: 0;
+                    height: 0;
+                    border-top: 6px solid #000;
+                    border-left: 3px solid transparent;
+                    border-right: 3px solid transparent;
+                }
+            } 
+            .choose-select{
+                display: none;
+                position: absolute;
+                left: 204px;
+                top: 29px;
+                z-index: 2;
+                width: 240px;
+                background: #fff;
+                border: 1px solid #999;
+                .choose-option{
+                    height: 20px;
+                    cursor:default;
+                    font-size: 14px;
+                    color: #666;
+                    &:hover{
+                        background: #00aaee;
+                        color: #fff;
+                    }
+                    p{
+                        float: left;
+                        margin-left: 15px;
+                        line-height: 20px;
+                    }
+                    .enroll-select{
+                        float: right;
+                        margin-right: 15px;
+                        line-height: 20px;
+                        color:transparent;
+                    }
+                }
+                .choose-option.h{
+                    background: #00aaee;
+                    color: #fff;
+                    .enroll-select{
+                        color:#fff;
+                    }
+                }
+            }
+            .choose-checked{
+                display:none; 
+                position: absolute;
+                left: 204px;
+                top: 29px;
+                z-index: 2;
+                background: #fff;
+                border: 1px solid #999;
+                .choose-check{
+                    padding: 10px;
+                    overflow: hidden;
+                    .enroll-select-all{
+                        float: left;
+                        margin-top: 4px;
+                    }
+                    .enroll-all{
+                        float: left;
+                        margin-left: 5px;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                    ul{
+                        overflow: hidden;
+                        margin: 25px 0 0 20px;
+                        width: 420px;
+                        li{
+                            float: left;
+                            margin-right: 20px;
+                            .enroll-select-small{
+                                float: left;
+                                margin-top: 4px;
+                            }
+                            p{
+                                float: left;
+                                margin-left: 5px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+         .choose-code-hint{
+            overflow: hidden;
+            margin: -20px 0 15px 204px;
+            width: 380px;
+            color: #999;
+            font-size: 12px;
+            .choose{
+                float: left;
+                margin: 20px 0 0 0;
+                width: 160px;
+                height: 30px;
+                background: #00aaee;
+                color: #fff;
+                font-size: 14px;
+            }
+            .enroll-phone-red{
+                display: none;
+                float: left;
+                margin: 27px 0 0 10px;
+                width: 14px;
+                height: 14px;
+                background: #FF000D;
+                @include br4(50%);
+                color: #fff;
+                text-align: center;
+                line-height: 14px;
+                font-weight: bold;
+            }
+            span{
+                display: none;
+                margin: 24px 0 0 0;
+                float: left;
+                color: #FF000D;
+            }
+        }
+    }
+}
+    

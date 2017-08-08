@@ -1,0 +1,135 @@
+@import "base";
+.ppt-all {
+    overflow: hidden;
+    width: 100%;
+	height: 450px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.footer-top{
+    margin: 50px auto;
+    width: 1200px;
+    height:60px;
+    li{
+        float: left;
+        overflow: hidden;
+        width: 300px;
+        height: 60px;
+        .center{
+            overflow: hidden;
+            margin: 11px auto;
+            width: 300px;
+            p{
+                float: left;
+                width: 55px;
+                height: 55px;
+                background: url("../images/doufpcicon.png")top left no-repeat;
+                background-size: 280% 250%;
+            }
+            span{
+                display: block;
+                line-height: 20px;
+                color: #333333;
+                text-indent: 10px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            i{
+                display: block;
+                line-height: 35px;
+                color: #999999;
+                text-indent: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+    li:nth-child(2){
+        p{
+            background: url("../images/doufpcicon.png")0px -88px no-repeat;
+            background-size: 280% 250%;
+        }
+    }
+    li:nth-child(3){
+        p{
+            background: url("../images/doufpcicon.png")-99px -88px no-repeat;
+            background-size: 280% 250%;
+        }
+    }
+    li:nth-child(4){
+        p{
+            background: url("../images/doufpcicon.png")top right no-repeat;
+            background-size: 280% 250%;
+        }
+    }
+}
+.content{
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+    li{
+        overflow: hidden;
+        margin-bottom: 30px;
+        .about{
+            overflow: hidden;
+            float: left;
+            position: relative;
+            width: 585px;
+            height: 300px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .about-up{
+                position: absolute;
+                bottom: -110px;
+                left: 0;
+                width: 100%;
+                max-height: 110px;
+                background: rgba(0,0,0,0.5);
+                color: #fff;
+                p{
+                    margin-left:30px; 
+                    margin-top:10px; 
+                    font-size: 30px;
+                    text-align: left;
+                    line-height: 30px;
+                }
+                .about-left{
+                    margin-left:30px; 
+                    p{
+                        float: left;
+                        margin:10px 0; 
+                        max-width: 70%;
+                        font-size: 14px;
+                        text-align: left;
+                        line-height: 16px;
+                        color: #dddddd;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: box;
+                        display: -webkit-box;
+                        line-clamp: 3;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                    }
+                    p:nth-child(2){
+                        float: right;
+                        margin-right: 10px;
+                        font-size: 30px;
+                        line-height: 30px;
+                        color: #ffffff;
+                    }
+                }
+                
+            }
+        }
+        .about:nth-child(2){
+            float: right;
+        }
+        .about-long{
+            width: 100%;
+        }
+    }
+}

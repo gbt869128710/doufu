@@ -12,7 +12,6 @@ $(function(){
         }
     })
     //input点击后框变蓝
-    var sj = /^1[34578]\d{9}$/;
     $(".phone").on("click",function(){
         $(this).css({"border": "1px solid #00aaee"});
         $(this).parents(".enroll-phone").siblings(".enroll-phone").find(".phone").css({"border": "1px solid #999"})

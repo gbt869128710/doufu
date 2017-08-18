@@ -1,0 +1,522 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html,
+body {
+  height: 100%;
+  font-family: 'Microsoft YaHei', 'iconfont';
+  font-size: 12px; }
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #333333; }
+
+ol,
+ul,
+li {
+  list-style-type: none; }
+
+input {
+  outline: none;
+  border: none;
+  background: none; }
+
+i {
+  font-style: normal; }
+
+/*border-radius*/
+.cover-all {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); }
+
+.my-profile {
+  overflow: hidden;
+  margin: 0 auto 60px auto;
+  width: 1200px;
+  background: #fff; }
+  .my-profile .my-profile-top {
+    margin-top: 60px; }
+  .my-profile .my-profile-right {
+    float: right;
+    padding: 20px;
+    width: 950px;
+    min-height: 800px;
+    background: #fff;
+    border-left: 10px solid #f2f2f2; }
+    .my-profile .my-profile-right .my-profile-right-top {
+      width: 950px;
+      height: 20px; }
+      .my-profile .my-profile-right .my-profile-right-top .column {
+        float: left;
+        font-size: 14px;
+        color: #999; }
+      .my-profile .my-profile-right .my-profile-right-top .column:nth-child(2) {
+        float: right;
+        margin-top: 9px;
+        width: 890px;
+        border-bottom: 1px solid #999; }
+    .my-profile .my-profile-right .my-profile-right-bottom .menu {
+      width: 950px;
+      height: 30px;
+      border-bottom: 1px solid #999; }
+      .my-profile .my-profile-right .my-profile-right-bottom .menu .subnav {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 12px;
+        line-height: 30px;
+        color: #666;
+        cursor: pointer; }
+      .my-profile .my-profile-right .my-profile-right-bottom .menu .subnav.h {
+        font-size: 14px;
+        line-height: 28px;
+        border-bottom: 3px solid #00aaee;
+        color: #00aaee; }
+    .my-profile .my-profile-right .my-profile-right-bottom .center-perfect {
+      display: none;
+      margin-top: 20px;
+      float: left;
+      width: 950px; }
+      .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-top {
+        margin-left: 20px;
+        margin-bottom: 20p;
+        width: 950px;
+        height: 30px;
+        color: #666;
+        font-size: 16px; }
+      .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom {
+        margin-bottom: 10px; }
+      .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom {
+        overflow: hidden;
+        position: relative;
+        width: 950px;
+        height: 30px; }
+        .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row i, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom i {
+          float: left;
+          margin-right: 5px;
+          color: #FF000D;
+          font-size: 20px;
+          line-height: 36px; }
+        .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row .perfect-row-left, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom .perfect-row-left {
+          float: left;
+          width: 90px;
+          font-size: 14px;
+          color: #999;
+          line-height: 30px;
+          text-align: right; }
+        .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row .phone, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row .land, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom .phone, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom .land {
+          float: left;
+          width: 800px;
+          height: 30px;
+          line-height: 30px;
+          color: #999;
+          font-size: 14px; }
+        .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row .cipher, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom .cipher {
+          float: left;
+          padding: 0 10px;
+          width: 218px;
+          height: 28px;
+          line-height: 28px;
+          color: #999;
+          font-size: 14px;
+          border: 1px solid #999; }
+        .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row ::-webkit-input-placeholder, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom ::-webkit-input-placeholder {
+          /* WebKit browsers */
+          color: #999; }
+        .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row ::-o-input-placeholder, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom ::-o-input-placeholder {
+          /* WebKit browsers */
+          color: #999; }
+        .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row ::-ms-input-placeholder, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom ::-ms-input-placeholder {
+          /* WebKit browsers */
+          color: #999; }
+        .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row ::-moz-input-placeholder, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom ::-moz-input-placeholder {
+          /* WebKit browsers */
+          color: #999; }
+        .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row .auth, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom .auth {
+          float: left;
+          width: 240px;
+          height: 30px; }
+          .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row .auth .auth-code, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom .auth .auth-code {
+            float: left;
+            width: 100px;
+            height: 28px;
+            padding: 0 10px;
+            border: 1px solid #999; }
+          .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row .auth .gain, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom .auth .gain {
+            float: right;
+            width: 100px;
+            height: 30px;
+            border: 1px solid #ff9700;
+            color: #999;
+            cursor: pointer; }
+            .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row .auth .gain:hover, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom .auth .gain:hover {
+              background: #ff9700;
+              color: #fff; }
+        .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row .auth-code-false, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row .auth-code-true, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom .auth-code-false, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom .auth-code-true {
+          float: left;
+          display: none;
+          margin: 6px 0 15px 10px;
+          color: #FF000D; }
+          .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row .auth-code-false .enroll-phone-red, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row .auth-code-false .enroll-phone-green, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row .auth-code-true .enroll-phone-red, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row .auth-code-true .enroll-phone-green, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom .auth-code-false .enroll-phone-red, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom .auth-code-false .enroll-phone-green, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom .auth-code-true .enroll-phone-red, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom .auth-code-true .enroll-phone-green {
+            float: left;
+            margin: 3px;
+            width: 14px;
+            height: 14px;
+            background: #FF000D;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -o-border-radius: 50%;
+            -ms-border-radius: 50%;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            line-height: 15px; }
+          .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row .auth-code-false .enroll-phone-green, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row .auth-code-true .enroll-phone-green, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom .auth-code-false .enroll-phone-green, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row-bottom .auth-code-true .enroll-phone-green {
+            background: green; }
+      .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-row:nth-child(1) {
+        height: 30px; }
+      .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-code-hint {
+        overflow: hidden;
+        margin: 20px 0 15px 0px;
+        width: 950px;
+        height: 32px;
+        color: #999;
+        font-size: 12px; }
+        .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-code-hint .cover-alter-bottom {
+          overflow: hidden;
+          float: left;
+          margin-left: 35px;
+          height: 32px; }
+          .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-code-hint .cover-alter-bottom i {
+            margin: 0 15px;
+            font-size: 19px; }
+          .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-code-hint .cover-alter-bottom em {
+            display: inline-block;
+            height: 30px;
+            padding: 0 10px;
+            line-height: 30px;
+            font-style: normal;
+            cursor: pointer;
+            background: #00aaee;
+            cursor: pointer;
+            color: #fff;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -o-border-radius: 3px;
+            -ms-border-radius: 3px; }
+            .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-code-hint .cover-alter-bottom em:hover {
+              background: #009adb; }
+          .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-code-hint .cover-alter-bottom .keep {
+            display: inline-block;
+            height: 30px;
+            padding: 0 10px;
+            line-height: 30px;
+            font-style: normal;
+            cursor: pointer;
+            background: #00aaee;
+            cursor: pointer;
+            color: #fff;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -o-border-radius: 3px;
+            -ms-border-radius: 3px; }
+            .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-code-hint .cover-alter-bottom .keep:hover {
+              background: #009adb; }
+          .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-code-hint .cover-alter-bottom .cancel {
+            display: inline-block;
+            height: 28px;
+            padding: 0 10px;
+            line-height: 28px;
+            font-style: normal;
+            cursor: pointer;
+            cursor: pointer;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -o-border-radius: 3px;
+            -ms-border-radius: 3px;
+            border: 1px solid #ff9700;
+            background: #fff;
+            color: #666; }
+            .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .perfect-code-hint .cover-alter-bottom .cancel:hover {
+              background: #ff9700;
+              color: #fff;
+              border: 1px solid #ff9700; }
+
+.cover-avatar {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -310px;
+  margin-top: -200px;
+  width: 620px;
+  height: 400px;
+  background: #fff;
+  border: 1px solid #999; }
+  .cover-avatar .cover-top {
+    width: 100%;
+    height: 40px;
+    background: #00aaee;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px; }
+    .cover-avatar .cover-top span {
+      float: right;
+      margin-right: 10px;
+      font-size: 20px;
+      cursor: pointer; }
+  .cover-avatar .center-perfect {
+    margin: 60px 100px 0 100px;
+    float: left;
+    width: 420px; }
+    .cover-avatar .center-perfect .perfect-row {
+      position: relative;
+      width: 420px;
+      height: 30px;
+      margin-bottom: 10px; }
+      .cover-avatar .center-perfect .perfect-row .sky {
+        float: left;
+        width: 9px;
+        height: 30px; }
+      .cover-avatar .center-perfect .perfect-row i {
+        float: left;
+        margin-right: 5px;
+        color: #FF000D;
+        font-size: 20px;
+        line-height: 36px; }
+      .cover-avatar .center-perfect .perfect-row .perfect-row-left {
+        float: left;
+        width: 70px;
+        font-size: 14px;
+        color: #333;
+        line-height: 30px;
+        text-align: right; }
+      .cover-avatar .center-perfect .perfect-row .perfect-row-radio {
+        float: left;
+        margin-top: 9px; }
+      .cover-avatar .center-perfect .perfect-row .perfect-row-right {
+        margin-right: 20px;
+        float: left;
+        font-size: 14px;
+        color: #333;
+        line-height: 30px; }
+      .cover-avatar .center-perfect .perfect-row .phone {
+        float: left;
+        padding: 0 10px;
+        width: 300px;
+        height: 28px;
+        line-height: 28px;
+        border: 1px solid #999;
+        color: #666; }
+      .cover-avatar .center-perfect .perfect-row .container {
+        float: left;
+        width: 300px;
+        height: 30px; }
+        .cover-avatar .center-perfect .perfect-row .container .docs-methods {
+          width: 300px;
+          height: 30px; }
+        .cover-avatar .center-perfect .perfect-row .container .form-inline {
+          width: 300px;
+          height: 30px; }
+        .cover-avatar .center-perfect .perfect-row .container .city-picker-input {
+          opacity: 0 !important;
+          top: -9999px;
+          left: -9999px;
+          position: absolute;
+          width: 300px;
+          height: 30px; }
+        .cover-avatar .center-perfect .perfect-row .container .city-picker-span {
+          width: 300px;
+          height: 30px;
+          position: relative;
+          display: block;
+          outline: 0;
+          -webkit-tap-highlight-color: transparent;
+          border: 1px solid #999;
+          background-color: #fff;
+          color: #ccc;
+          cursor: pointer; }
+        .cover-avatar .center-perfect .perfect-row .container .city-picker-span > .placeholder {
+          color: #aaa; }
+        .cover-avatar .center-perfect .perfect-row .container .city-picker-span > .arrow {
+          position: absolute;
+          top: 50%;
+          right: 8px;
+          width: 10px;
+          margin-top: -3px;
+          height: 5px;
+          background: url(../images/drop-arrow.png) -10px -25px no-repeat; }
+        .cover-avatar .center-perfect .perfect-row .container .city-picker-span.focus,
+        .cover-avatar .center-perfect .perfect-row .container .city-picker-span.open {
+          border: 1px solid #00aaee; }
+        .cover-avatar .center-perfect .perfect-row .container .city-picker-span.open > .arrow {
+          background-position: -10px -10px; }
+        .cover-avatar .center-perfect .perfect-row .container .city-picker-span > .title > span {
+          color: #333;
+          padding: 5px;
+          border-radius: 3px; }
+        .cover-avatar .center-perfect .perfect-row .container .city-picker-span > .title > span:hover {
+          background-color: #f1f8ff; }
+        .cover-avatar .center-perfect .perfect-row .container .city-picker-dropdown {
+          overflow: hidden;
+          position: absolute;
+          width: 315px;
+          left: -9999px;
+          top: -9999px;
+          outline: 0;
+          -webkit-tap-highlight-color: transparent;
+          z-index: 999999;
+          display: none;
+          min-width: 330px;
+          margin-bottom: 20px; }
+        .cover-avatar .center-perfect .perfect-row .container .city-select-wrap {
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); }
+        .cover-avatar .center-perfect .perfect-row .container .city-select-tab {
+          border-bottom: 1px solid #ccc;
+          background: #f0f0f0;
+          font-size: 13px;
+          width: 322px; }
+        .cover-avatar .center-perfect .perfect-row .container .city-select-tab > a {
+          display: inline-block;
+          padding: 8px 22px;
+          border-left: 1px solid #ccc;
+          border-bottom: 1px solid transparent;
+          color: #4D4D4D;
+          text-align: center;
+          outline: 0;
+          text-decoration: none;
+          cursor: pointer;
+          font-size: 14px;
+          margin-bottom: -1px; }
+        .cover-avatar .center-perfect .perfect-row .container .city-select-tab > a.active {
+          background: #fff;
+          border-bottom: 1px solid #fff;
+          color: #46A4FF; }
+        .cover-avatar .center-perfect .perfect-row .container .city-select-tab > a:first-child {
+          border-left: none; }
+        .cover-avatar .center-perfect .perfect-row .container .city-select-tab > a:last-child.active {
+          border-right: 1px solid #ccc; }
+        .cover-avatar .center-perfect .perfect-row .container .city-select-content {
+          width: 292px;
+          min-height: 10px;
+          background-color: #fff;
+          padding: 10px 15px; }
+        .cover-avatar .center-perfect .perfect-row .container .city-select {
+          font-size: 13px; }
+        .cover-avatar .center-perfect .perfect-row .container .city-select dl {
+          line-height: 2;
+          clear: both;
+          padding: 3px 0;
+          margin: 0; }
+        .cover-avatar .center-perfect .perfect-row .container .city-select dt {
+          position: absolute;
+          width: 2.5em;
+          font-weight: 500;
+          text-align: right;
+          line-height: 2; }
+        .cover-avatar .center-perfect .perfect-row .container .city-select dd {
+          margin-left: 0;
+          line-height: 2; }
+        .cover-avatar .center-perfect .perfect-row .container .city-select.province dd {
+          margin-left: 3em; }
+        .cover-avatar .center-perfect .perfect-row .container .city-select a {
+          display: inline-block;
+          padding: 0 10px;
+          outline: 0;
+          text-decoration: none;
+          white-space: nowrap;
+          margin-right: 2px;
+          text-decoration: none;
+          color: #333;
+          cursor: pointer; }
+        .cover-avatar .center-perfect .perfect-row .container .city-select a:hover,
+        .cover-avatar .center-perfect .perfect-row .container .city-select a:focus {
+          background-color: #f1f8ff;
+          border-radius: 2px;
+          color: #46A4FF; }
+        .cover-avatar .center-perfect .perfect-row .container .city-select a.active {
+          background-color: #46A4FF;
+          color: #fff;
+          border-radius: 2px; }
+    .cover-avatar .center-perfect .perfect-row:nth-child(1) {
+      height: 30px; }
+    .cover-avatar .center-perfect .perfect-code-hint {
+      overflow: hidden;
+      margin: 30px 0 15px 0px;
+      width: 950px;
+      height: 30px;
+      color: #999;
+      font-size: 12px; }
+      .cover-avatar .center-perfect .perfect-code-hint .cover-alter-bottom {
+        overflow: hidden;
+        float: left;
+        margin-left: 230px;
+        height: 32px;
+        padding: 0 25px;
+        text-align: left;
+        font-size: 14px;
+        color: #666; }
+        .cover-avatar .center-perfect .perfect-code-hint .cover-alter-bottom i {
+          margin: 0 15px;
+          font-size: 19px; }
+        .cover-avatar .center-perfect .perfect-code-hint .cover-alter-bottom em {
+          display: inline-block;
+          height: 20px;
+          padding: 0 10px;
+          line-height: 20px;
+          font-style: normal;
+          cursor: pointer;
+          border: 1px solid #00aaee;
+          background: #00aaee;
+          cursor: pointer;
+          color: #fff;
+          border-radius: 2px;
+          -moz-border-radius: 2px;
+          -webkit-border-radius: 2px;
+          -o-border-radius: 2px;
+          -ms-border-radius: 2px; }
+          .cover-avatar .center-perfect .perfect-code-hint .cover-alter-bottom em:hover {
+            background: #009adb;
+            border: 1px solid #009adb; }
+        .cover-avatar .center-perfect .perfect-code-hint .cover-alter-bottom .alter-cancel {
+          border: 1px solid #ff9700;
+          background: #fff;
+          color: #666; }
+          .cover-avatar .center-perfect .perfect-code-hint .cover-alter-bottom .alter-cancel:hover {
+            background: #ff9700;
+            color: #fff;
+            border: 1px solid #ff9700; }
+      .cover-avatar .center-perfect .perfect-code-hint .enroll-phone-red {
+        display: none;
+        float: left;
+        margin: 7px 0 0 0px;
+        width: 14px;
+        height: 14px;
+        background: #FF000D;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -o-border-radius: 50%;
+        -ms-border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        line-height: 14px;
+        font-weight: bold; }
+      .cover-avatar .center-perfect .perfect-code-hint span {
+        display: none;
+        margin: 4px 0 0 0;
+        float: left;
+        color: #FF000D; }

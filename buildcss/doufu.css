@@ -32,7 +32,10 @@ i {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 450px; }
+  height: 450px;
+  transform: translateX(0px);
+  transition-property: transform;
+  transition-duration: 0.6s; }
   .ppt-all .ppt {
     overflow: hidden;
     position: absolute;
@@ -46,6 +49,26 @@ i {
       .ppt-all .ppt .pic img {
         width: 100%;
         height: 100%; }
+
+.ppt-all .num {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  left: 0px;
+  text-align: center;
+  font-size: 0px; }
+
+.ppt-all .num li {
+  width: 10px;
+  height: 10px;
+  background-color: #999;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0px 3px;
+  cursor: pointer; }
+
+.ppt-all .num li.on {
+  background-color: #ccc; }
 
 .nav {
   position: absolute;

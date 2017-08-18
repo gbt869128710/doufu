@@ -82,8 +82,9 @@ i {
           line-height: 32px;
           font-style: normal; }
         .center .center-top .center-top-details .genre p {
+          position: relative;
           float: left;
-          padding: 0 10px;
+          padding: 0 20px;
           margin-right: 20px;
           height: 30px;
           background: #fff;
@@ -91,9 +92,31 @@ i {
           color: #7e7e7e;
           line-height: 30px;
           cursor: pointer; }
+          .center .center-top .center-top-details .genre p b {
+            font-weight: inherit; }
+          .center .center-top .center-top-details .genre p em {
+            position: absolute;
+            right: 2px;
+            bottom: -9px;
+            color: #fff; }
         .center .center-top .center-top-details .genre .genre-mold.h {
           border: 1px solid #ff9700;
           color: #ff9700; }
+          .center .center-top .center-top-details .genre .genre-mold.h span {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-bottom: 20px solid #ff9700;
+            border-left: 20px solid transparent;
+            color: #fff; }
+          .center .center-top .center-top-details .genre .genre-mold.h em {
+            position: absolute;
+            right: 0;
+            bottom: -9px;
+            color: #fff; }
         .center .center-top .center-top-details .genre .genre-mold-word {
           display: none;
           width: 100px;
@@ -551,68 +574,123 @@ i {
       .center .center-bottom .center-bottom-right .referral-content {
         width: 980px;
         overflow: hidden; }
-        .center .center-bottom .center-bottom-right .referral-content li {
+        .center .center-bottom .center-bottom-right .referral-content .referral-content-li {
           display: none;
           width: 980px; }
-          .center .center-bottom .center-bottom-right .referral-content li .serve {
+          .center .center-bottom .center-bottom-right .referral-content .referral-content-li .ul-product {
+            margin: 40px 60px;
+            width: 860px;
+            overflow: hidden; }
+            .center .center-bottom .center-bottom-right .referral-content .referral-content-li .ul-product .li-product:nth-child(1) i {
+              background: url("../images/icon1.png") no-repeat;
+              background-size: 700% 100%;
+              background-position: -154px 0px; }
+            .center .center-bottom .center-bottom-right .referral-content .referral-content-li .ul-product .li-product:nth-child(2) i {
+              background: url("../images/icon1.png") no-repeat;
+              background-size: 700% 100%;
+              background-position: -104px 0px; }
+            .center .center-bottom .center-bottom-right .referral-content .referral-content-li .ul-product .li-product:nth-child(3) i {
+              background: url("../images/icon1.png") no-repeat;
+              background-size: 700% 100%;
+              background-position: -53px 0px; }
+            .center .center-bottom .center-bottom-right .referral-content .referral-content-li .ul-product .li-product i {
+              display: inline-block;
+              width: 26px;
+              height: 26px;
+              background: url("../images/icon1.png") no-repeat;
+              background-size: 700% 100%;
+              background-position: -2px 0px;
+              vertical-align: middle; }
+            .center .center-bottom .center-bottom-right .referral-content .referral-content-li .ul-product .li-product span {
+              font-size: 16px;
+              font-weight: bold;
+              color: #ff9700;
+              margin-left: 5px;
+              vertical-align: middle;
+              line-height: 20px; }
+            .center .center-bottom .center-bottom-right .referral-content .referral-content-li .ul-product .li-product p {
+              padding: 10px 0 40px 30px;
+              color: #666;
+              font-size: 14px; }
+            .center .center-bottom .center-bottom-right .referral-content .referral-content-li .ul-product .li-product ul {
+              margin-left: 20px; }
+              .center .center-bottom .center-bottom-right .referral-content .referral-content-li .ul-product .li-product ul li div i {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background: #ff9700;
+                transform: rotateZ(135deg);
+                transition: 0.3s all linear;
+                vertical-align: middle; }
+              .center .center-bottom .center-bottom-right .referral-content .referral-content-li .ul-product .li-product ul li div span {
+                width: 870px;
+                font-size: 14px;
+                color: #666666;
+                line-height: 30px;
+                font-weight: inherit;
+                margin-left: 5px;
+                vertical-align: middle; }
+            .center .center-bottom .center-bottom-right .referral-content .referral-content-li .ul-product li:nth-child(1) li span {
+              color: #333333; }
+          .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve {
             width: 980px; }
-            .center .center-bottom .center-bottom-right .referral-content li .serve p {
+            .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve p {
               color: #999999;
               font-size: 18px;
               line-height: 60px;
               text-indent: 60px; }
-            .center .center-bottom .center-bottom-right .referral-content li .serve .spend {
+            .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .spend {
               width: 980px;
               height: 130px; }
-              .center .center-bottom .center-bottom-right .referral-content li .serve .spend .spend-left {
+              .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .spend .spend-left {
                 float: left;
                 height: 130px;
                 padding: 0 30px 0 25px;
                 border-right: 1px solid #d6d6d6; }
-                .center .center-bottom .center-bottom-right .referral-content li .serve .spend .spend-left .startone {
+                .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .spend .spend-left .startone {
                   float: left;
                   width: 145px;
                   height: 115px; }
-                  .center .center-bottom .center-bottom-right .referral-content li .serve .spend .spend-left .startone .star_score {
+                  .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .spend .spend-left .startone .star_score {
                     margin: 20px 0 0 10px; }
-                    .center .center-bottom .center-bottom-right .referral-content li .serve .spend .spend-left .startone .star_score span {
+                    .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .spend .spend-left .startone .star_score span {
                       display: inline-block;
                       width: 22px;
                       height: 22px;
                       background: url("../images/starsy.png") no-repeat; }
-                    .center .center-bottom .center-bottom-right .referral-content li .serve .spend .spend-left .startone .star_score span:last-of-type {
+                    .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .spend .spend-left .startone .star_score span:last-of-type {
                       background: url("../images/stary.png") no-repeat; }
-                  .center .center-bottom .center-bottom-right .referral-content li .serve .spend .spend-left .startone .attitude {
+                  .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .spend .spend-left .startone .attitude {
                     margin-top: 30px;
                     color: #666666;
                     text-align: center;
                     font-size: 18px; }
-                .center .center-bottom .center-bottom-right .referral-content li .serve .spend .spend-left .spend-left-right {
+                .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .spend .spend-left .spend-left-right {
                   float: left;
                   margin-left: 50px; }
-                  .center .center-bottom .center-bottom-right .referral-content li .serve .spend .spend-left .spend-left-right .spend-long {
+                  .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .spend .spend-left .spend-left-right .spend-long {
                     margin-bottom: 18px;
                     overflow: hidden;
                     width: 200px; }
-                    .center .center-bottom .center-bottom-right .referral-content li .serve .spend .spend-left .spend-left-right .spend-long span {
+                    .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .spend .spend-left .spend-left-right .spend-long span {
                       float: left;
                       font-size: 16px;
                       color: #666666; }
-                    .center .center-bottom .center-bottom-right .referral-content li .serve .spend .spend-left .spend-left-right .spend-long .long-base {
+                    .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .spend .spend-left .spend-left-right .spend-long .long-base {
                       float: right;
                       margin: 5px 0 0 10px;
                       width: 100px;
                       height: 15px;
                       background: #cccccc; }
-                      .center .center-bottom .center-bottom-right .referral-content li .serve .spend .spend-left .spend-left-right .spend-long .long-base .long {
+                      .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .spend .spend-left .spend-left-right .spend-long .long-base .long {
                         height: 15px;
                         background: #ff9700; }
-              .center .center-bottom .center-bottom-right .referral-content li .serve .spend .spend-right {
+              .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .spend .spend-right {
                 float: left;
                 margin-left: 35px;
                 width: 420px;
                 height: 126px; }
-                .center .center-bottom .center-bottom-right .referral-content li .serve .spend .spend-right li {
+                .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .spend .spend-right li {
                   display: block;
                   float: left;
                   margin: 0 26px 17px 0;
@@ -622,94 +700,94 @@ i {
                   text-align: center;
                   line-height: 30px;
                   color: #999999; }
-                .center .center-bottom .center-bottom-right .referral-content li .serve .spend .spend-right li:nth-child(3n) {
+                .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .spend .spend-right li:nth-child(3n) {
                   margin-right: 0; }
-            .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend {
+            .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend {
               margin-top: 40px;
               width: 978px;
               height: 30px;
               border: 1px solid #d7d7d7;
               background: #f2f2f2; }
-              .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend .all-spend-sort {
+              .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend .all-spend-sort {
                 height: 30px;
                 display: block;
                 float: left; }
-                .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend .all-spend-sort span {
+                .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend .all-spend-sort span {
                   padding: 0 20px;
                   display: inline-block;
                   line-height: 30px;
                   color: #666;
                   font-size: 14px;
                   cursor: pointer; }
-                  .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend .all-spend-sort span i {
+                  .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend .all-spend-sort span i {
                     font-style: normal; }
-              .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend .all-spend-sort.h span {
+              .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend .all-spend-sort.h span {
                 color: #ff9700;
                 font-size: 16px; }
-            .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom {
+            .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom {
               width: 980px; }
-              .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-top {
+              .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-top {
                 width: 980px;
                 height: 55px;
                 border-bottom: 1px solid #d7d7d7;
                 line-height: 55px;
                 color: #999999;
                 font-size: 18px; }
-                .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-top .appraise {
+                .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-top .appraise {
                   float: left;
                   margin-left: 40px;
                   width: 346px; }
-                .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-top .appraise:nth-child(2) {
+                .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-top .appraise:nth-child(2) {
                   margin-left: 150px;
                   width: 112px;
                   text-align: center; }
-                .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-top .appraise:nth-child(3) {
+                .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-top .appraise:nth-child(3) {
                   margin-left: 116px;
                   width: 140px;
                   text-align: center; }
-              .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-bottom {
+              .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-bottom {
                 overflow: hidden;
                 padding: 30px 0;
                 width: 980px;
                 border-bottom: 1px solid #d7d7d7; }
-                .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-left {
+                .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-left {
                   float: left;
                   margin-left: 25px;
                   width: 346px; }
-                  .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-left .appraise-left-top {
+                  .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-left .appraise-left-top {
                     width: 400px;
                     height: 16px; }
-                    .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-left .appraise-left-top span {
+                    .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-left .appraise-left-top span {
                       margin-right: 18px;
                       color: #999999; }
-                    .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-left .appraise-left-top .time {
+                    .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-left .appraise-left-top .time {
                       margin-right: 0; }
-                  .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-left .evaluate {
+                  .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-left .evaluate {
                     margin-top: 20px;
                     line-height: 20px;
                     font-size: 14px;
                     text-indent: 0;
                     color: #666666; }
-                .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-center {
+                .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-center {
                   float: left;
                   margin: 10px 0 0 157px;
                   width: 143px; }
-                  .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-center .star_score {
+                  .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-center .star_score {
                     margin: 20px 0 0 10px; }
-                    .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-center .star_score span {
+                    .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-center .star_score span {
                       display: inline-block;
                       width: 18px;
                       height: 18px;
                       background: url("../images/starsy.png") no-repeat;
                       background-size: 100% 100%; }
-                    .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-center .star_score span:last-of-type {
+                    .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-center .star_score span:last-of-type {
                       background: url("../images/stary.png") no-repeat;
                       background-size: 100% 100%; }
-                .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-right {
+                .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-right {
                   float: left;
                   margin-left: 96px;
                   width: 140px; }
-                  .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-right .portrait {
+                  .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-right .portrait {
                     overflow: hidden;
                     margin: 0 auto;
                     width: 42px;
@@ -719,18 +797,18 @@ i {
                     -webkit-border-radius: 50%;
                     -o-border-radius: 50%;
                     -ms-border-radius: 50%; }
-                    .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-right .portrait img {
+                    .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-right .portrait img {
                       width: 42px;
                       height: 42px; }
-                  .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-right p {
+                  .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-right p {
                     text-align: center;
                     color: #333333;
                     text-indent: 0;
                     line-height: 24px; }
-                  .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-right .heald {
+                  .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-bottom .appraise-right .heald {
                     color: #999999;
                     text-align: center; }
-              .center .center-bottom .center-bottom-right .referral-content li .serve .all-spend-bottom .all-spend-bottom-bottom:last-of-type {
+              .center .center-bottom .center-bottom-right .referral-content .referral-content-li .serve .all-spend-bottom .all-spend-bottom-bottom:last-of-type {
                 border-bottom: none; }
 
 .choose {

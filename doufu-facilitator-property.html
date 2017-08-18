@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/doufu-my-property.css">
+    <link rel="stylesheet" href="css/doufu-my-left.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+</head>
+
+<body>
+    <!--header-->
+
+<header>
+    <div class="header-top"></div>
+    <div class="header-center">
+        <a href="doufu.html"><<返回豆腐首页</a>
+        <nav>
+            <a href="">登录</a>
+            <a href="">注册</a>
+            <a href="">我的订单</a>
+            <a href="">购物车</a>
+            <a href="">服务商申请</a>
+            <a href="">服务商登录</a>
+            <a href="">手机豆腐</a>
+        </nav>
+        <div class="header-bottom">
+            <div class="logo">
+                <img src="images/douflogo.png" alt="">
+                <a>&#xe628;<span>城市</span></a>
+            </div>
+            <div class="right">
+                <form action="">
+                    <input type="text" placeholder="请输入你想了解的内容">
+                    <input type="submit" value="搜索">
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+<!--headerend-->
+    <div class="cover-all"></div>
+    <ul class="sidebar">
+        <li>
+            <i>&#xe60c;</i>
+            <span>在线咨询</span>
+        </li>
+        <li>
+            <i>&#xe664;</i>
+            <span>购物车</span>
+        </li>
+        <li>
+            <i>&#xe62c;</i>
+            <span>返回顶部</span>
+        </li>
+    </ul>
+    <div class="my-profile">
+        <div class="my-profile-top"></div>
+        <!--left-->
+<div class="my-profile-left">
+    <div class="my-profile-left-head">
+        <div id="addCommodityIndex">
+            <div class="input-group row">
+                <div class="col-sm-9 big-photo">
+                    <div id="preview-frontage">
+                        <img id="imghead-frontage" border="0" src="images/my.jpg" width="100" height="100">
+                    </div>
+                    <div class="logo-cover">
+                        <span class="avatar">点击修改头像
+                            <input type="file" onchange="previewImage(this,'imghead-frontage')"  id="previewImg-frontage" >
+                       </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="my-profile-left-name">黄兴</p>
+    </div>
+    <ul class="my-profile-left-nav">
+        <li class="my-profile-left-nav-big">
+            <a href="">我的资料</a>
+            <div class="my-profile-left-nav-small">
+                <a href="">基本资料</a>
+                <a href="">安全中心</a>
+                <a href="">认证审核</a>
+            </div>
+        </li>
+        <li class="my-profile-left-nav-big">
+            <a href="">消息中心</a>
+            <div class="my-profile-left-nav-small">
+                <a href="">未读消息</a>
+                <a href="">已读消息</a>
+            </div>
+        </li>
+        <li class="my-profile-left-nav-big">
+            <a href="">资产中心</a>
+            <div class="my-profile-left-nav-small">
+                <a href="">我的余额</a>
+                <a href="">余额流水</a>
+                <a href="">未到账资金</a>
+            </div>
+        </li>
+        <li class="my-profile-left-nav-big">
+            <a href="">交易管理</a>
+            <div class="my-profile-left-nav-small">
+                <a href="">已卖出</a>
+                <a href="">评价管理</a>
+            </div>
+        </li>
+        <li class="my-profile-left-nav-big">
+            <a href="">客户服务</a>
+            <div class="my-profile-left-nav-small">
+                <a href="">退款管理</a>
+                <a href="">售后管理</a>
+                <a href="">投诉记录</a>
+            </div>
+        </li>
+        <li class="my-profile-left-nav-big">
+            <a href="">发票管理</a>
+        </li>
+        <li class="my-profile-left-nav-big">
+            <a href="">产品管理</a>
+            <div class="my-profile-left-nav-small">
+                <a href="">我正在卖的</a>
+                <a href="">套餐管理</a>
+                <a href="">暂停服务</a>
+            </div>
+        </li>
+        <li class="my-profile-left-nav-big">
+            <a href="">退出登录</a>
+        </li>
+    </ul>
+</div>
+<!--leftend-->
+        <div class="my-profile-right">
+            <div class="my-profile-right-top">
+                <p class="column">账户余额</p>
+                <p class="column"></p>
+            </div>
+            <div class="my-profile-right-bottom">
+                <div class="menu">
+                    <span class="subnav">我的余额</span>
+                    <span class="subnav">余额流水</span>
+                    <span class="subnav">未到账资金</span>
+                </div>
+                <ul class="center-perfect center-perfect-left">
+                    <li class="perfect-row">
+                        <span class="perfect-row-left">当前余额：</span>
+                        <span class="money">2000.00</span>
+                        <input type="button" class="alter-redact" value="提现">
+                        <input type="button" class="recharge" value="充值">
+                    </li>
+                    <li class="deposit-explain">
+                        <p>余额提现说明</p>
+                        <p>1.余额提现申请之后，我们将在7个工作日内完成申请处理。</p>
+                        <p>2.如果订单是用公司账户支付的，提现时必须为原公司对公账户（若公司名称变更，可提供工商局的变更函，此时可提现至变更后的公司）。</p>
+                        <p>3.如果订单是用个人账户支付的，提现时个人的银行账户、支付宝账户均可。</p>
+
+                    </li>
+                </ul>
+                <div class="center-perfect center-perfect-left">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>金额</td>
+                                <td>类型</td>
+                                <td colspan="2">时间</td>
+                                <td>备注</td>
+                                <td>状态</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>-500元</td>
+                                <td>提现</td>
+                                <td>2017-08-10</td>
+                                <td>16:20:36</td>
+                                <td>提现</td>
+                                <td>已完成</td>
+                            </tr>
+                            <tr>
+                                <td>+500元</td>
+                                <td>用户购买</td>
+                                <td>2017-08-02</td>
+                                <td>13:11:03</td>
+                                <td>订单:9170117331941 款项</td>
+                                <td>处理中</td>
+                            </tr>
+                            <tr>
+                                <td>-500元</td>
+                                <td>用户退款</td>
+                                <td>2017-08-02</td>
+                                <td>13:11:03</td>
+                                <td>订单:919525563242 款项</td>
+                                <td>已退款</td>
+                            </tr>
+                            <tr>
+                                <td>-500元</td>
+                                <td>用户退款</td>
+                                <td>2017-08-02</td>
+                                <td>13:11:03</td>
+                                <td>订单:919525563242 款项</td>
+                                <td>已退款</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="message-paging">
+                        <span class="message-paging-prev message-paging-top">上一页</span>
+                        <span>第1页</span>
+                        <span class="message-paging-next message-paging-top">下一页</span>
+                        <span>共10页</span>
+                    </div>
+                </div>
+                <div class="center-perfect center-perfect-left">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>金额</td>
+                                <td>类型</td>
+                                <td colspan="2">时间</td>
+                                <td>未到账原因</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>500元</td>
+                                <td>用户下单</td>
+                                <td>2017-08-10</td>
+                                <td>16:20:36</td>
+                                <td>服务未完结</td>
+                            </tr>
+                            <tr>
+                                <td>-500元</td>
+                                <td>用户下单</td>
+                                <td>2017-08-10</td>
+                                <td>16:20:36</td>
+                                <td>退还订单:9170117331941 款项</td>
+                            </tr>
+                            <tr>
+                                <td>500元</td>
+                                <td>退款</td>
+                                <td>2017-08-10</td>
+                                <td>16:20:36</td>
+                                <td>豆腐网处理中</td>
+                            </tr>
+                            <tr>
+                                <td>500元</td>
+                                <td>退款</td>
+                                <td>2017-08-10</td>
+                                <td>16:20:36</td>
+                                <td>豆腐网处理中</td>
+                            </tr>
+                            <tr>
+                                <td>500元</td>
+                                <td>退款</td>
+                                <td>2017-08-10</td>
+                                <td>16:20:36</td>
+                                <td>豆腐网处理中</td>
+                            </tr>
+                            <tr>
+                                <td>500元</td>
+                                <td>退款</td>
+                                <td>2017-08-10</td>
+                                <td>16:20:36</td>
+                                <td>豆腐网处理中</td>
+                            </tr>
+                            <tr>
+                                <td>500元</td>
+                                <td>退款</td>
+                                <td>2017-08-10</td>
+                                <td>16:20:36</td>
+                                <td>豆腐网处理中</td>
+                            </tr>
+                            <tr>
+                                <td>500元</td>
+                                <td>退款</td>
+                                <td>2017-08-10</td>
+                                <td>16:20:36</td>
+                                <td>豆腐网处理中</td>
+                            </tr>
+                            <tr>
+                                <td>500元</td>
+                                <td>退款</td>
+                                <td>2017-08-10</td>
+                                <td>16:20:36</td>
+                                <td>豆腐网处理中</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="message-paging">
+                        <span class="message-paging-prev message-paging-top">上一页</span>
+                        <span>第1页</span>
+                        <span class="message-paging-next message-paging-top">下一页</span>
+                        <span>共10页</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cover-avatar">
+        <p class="cover-top">提现申请
+            <span>&#xe62f;</span></p>
+        <div class="cover-bottom">
+            <div class="cover-top-flow-line-all">
+                <div class="cover-top-flow-line"></div>
+                <div class="cover-top-flow-line"></div>
+            </div>
+            <div class="cover-top-flow">
+                <div class="cover-top-flow-one h">
+                    <p>1</p>
+                    <span>客户申请提现</span>
+                </div>
+
+                <div class="cover-top-flow-one">
+                    <p>2</p>
+                    <span>等待处理</span>
+                </div>
+
+                <div class="cover-top-flow-one">
+                    <p>3</p>
+                    <span>提现完成</span>
+                </div>
+            </div>
+            <div class="cover-bottom-center">
+                <p class="balance"><i></i>您目前账户余额为：<span>2000.00</span>元，可提现金额为：<span class="funds">2000.00</span>元
+                    <input type="button" value="全部提现" class="all-funds"> </p>
+                <p class="balance">
+                    <i>*</i>提现金额
+                    <input type="text" class="cash-withdrawal-amount" value="2000.00">元
+                </p>
+                <p class="balance">
+                    <i>*</i>退款渠道
+                </p>
+                <div class="binding">
+                    <p>已绑定渠道</p>
+                    <p>
+                        <input type="radio" id="alipay" name="pay">
+                        <span>支付宝</span>
+                        <span class="alipay-name">高洪眙</span>
+                        <span class="alipay-howl">1381***4740</span>
+                        <input type="button" value="删除" class="remove-alipay">
+                    </p>
+                    <p>
+                        <input type="radio" id="alipay" name="pay">
+                        <span>银联卡 </span>
+                        <span class="alipay-name">黄兴 </span>
+                        <span class="alipay-howl">622202********2001 </span>
+                        <input type="button" value="删除" class="remove-alipay">
+                    </p>
+                </div>
+                <div class="append">
+                    <i>+</i>
+                    <span class="addition">添加新渠道</span>
+                    <div class="append-bottom">
+
+                        <span class="append-bottom-mold">类型：</span>
+                        <i>*</i>
+                        <select name="" id="genre-select">
+                            <option value="">支付宝</option>
+                            <option value="">银行卡</option>
+                        </select>
+                        <ul class="pay-a-fraction">
+                    <li class="perfect-row-bottom">
+                        <span class="perfect-row-left">账号：</span>
+                        <i>*</i>
+                        <input type="text" class="fraction-cipher">
+                        <span class="perfect-row-left">姓名：</span>
+                        <i>*</i>
+                        <input type="text" class="fraction-cipher">
+                    </li>
+                    
+                    
+                    <li class="perfect-row-bottom  enroll-cipher">
+            <span class="perfect-row-left">验证码：</span>
+            <i>*</i>
+            <div class="auth">
+                <input type="text" class="auth-code fraction-phone" maxlength='6' onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" disabled>
+                <input type="button" value="点击获取" class="fraction-gain" disabled>
+            </div>
+            <div class="auth-code-false">
+            <span>验证码输入不正确</span>
+            <div class="enroll-phone-red">!</div>
+            </div>
+            <div class="auth-code-true">
+                        <div class="enroll-phone-green">&#xe63f;</div>
+            </div>
+        </li>
+               <li class="perfect-code-hint">
+                <p class="cover-alter-bottom">
+                <input type="button" class="fraction-keep" disabled value="确定"></p>
+            </li>
+                </ul>
+                    <ul class="pay-a-fraction">
+                     <li class="perfect-row-bottom">
+                        <span class="perfect-row-left">银行：</span>
+                        <i>*</i>
+                        <select name="" id="genre-select">
+                            <option value="">工商银行</option>
+                            <option value="">农业银行</option>
+                        </select>
+                        <span class="perfect-row-left">卡号：</span>
+                        <i>*</i>
+                        <input type="text" class="fraction-cipher">
+                    </li>
+                    <li class="perfect-row-bottom">
+                        <span class="perfect-row-left">姓名：</span>
+                        <i>*</i>
+                        <input type="text" class="fraction-cipher">
+                        <span class="perfect-row-left">开户地：</span>
+                        <i>*</i>
+                        <input type="text" class="fraction-cipher">
+                    </li>
+                     <li class="perfect-row-bottom">
+                        <span class="perfect-row-left">开户行：</span>
+                        <i>*</i>
+                        <input type="text" class="fraction-cipher">
+                        <em>例：工商银行南京鼓楼区支行</em>
+                    </li>
+                    
+                    <li class="perfect-row-bottom  enroll-cipher">
+            <span class="perfect-row-left">验证码：</span>
+            <i>*</i>
+            <div class="auth">
+                <input type="text" class="auth-code fraction-phone" maxlength='6' onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" disabled>
+                <input type="button" value="点击获取" class="fraction-gain" disabled>
+            </div>
+            <div class="auth-code-false">
+            <span>验证码输入不正确</span>
+            <div class="enroll-phone-red">!</div>
+            </div>
+            <div class="auth-code-true">
+                        <div class="enroll-phone-green">&#xe63f;</div>
+            </div>
+        </li>
+               <li class="perfect-code-hint">
+                <p class="cover-alter-bottom">
+                <input type="button" class="fraction-keep" disabled value="确定"></p>
+            </li>
+                </ul>
+                    </div>
+
+                </div>
+                <p class="cover-bottom-btn"><em class="abolish">取消</em><i></i><em class="ensure">确定</em></p>
+            </div>
+        </div>
+
+
+        <div class="cover-bottom-two">
+            <div class="cover-top-flow-line-all">
+                <div class="cover-top-flow-line"></div>
+                <div class="cover-top-flow-line"></div>
+            </div>
+            <div class="cover-top-flow">
+                <div class="cover-top-flow-one h">
+                    <p>1</p>
+                    <span>客户申请提现</span>
+                </div>
+
+                <div class="cover-top-flow-one h">
+                    <p>2</p>
+                    <span>等待处理</span>
+                </div>
+
+                <div class="cover-top-flow-one">
+                    <p>3</p>
+                    <span>提现完成</span>
+                </div>
+            </div>
+            <div class="cover-bottom-center">
+                   <div class="prosperity">
+                    <p>&#xe614;
+                    </p>
+                    <p>您已成功提交提现申请，我们将在7个工作日内对您的申请进行处理</p>
+                    <p>请您耐心等待</p>
+                   </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+<footer>
+       <div class="my-profile-top"></div>
+        <div class="footer-top-all">
+            <ul class="footer-top">
+                <li>
+                    <div class="center">
+                        <p></p>
+                        <span>低价保障•低价保障</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="center">
+                        <p></p>
+                        <span>明码标价•明码标价</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="center">
+                        <p></p>
+                        <span>支付安全•支付安全</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="center">
+                        <p></p>
+                        <span>售后无忧•售后无忧</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-center">
+            <div class="footer-center-left-all">
+                <div class="footer-center-left">
+                    <ul>
+                        <li><a href="">服务指南</a></li>
+                        <li><a href="doufu-serve.html">免费注册</a></li>
+                        <li><a href="doufu-buy.html">购买演示</a></li>
+                        <li><a href="doufu-way.html">服务方式</a></li>
+                        <li><a href="doufu-help.html">新手帮助</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="doufu-pay.html">支付方式</a></li>
+                        <li><a href="">微信支付</a></li>
+                        <li><a href="">支付宝</a></li>
+                        <li><a href="">分期支付</a></li>
+                        <li><a href="">线下付款</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">售后服务</a></li>
+                        <li><a href="">退换服务</a></li>
+                        <li><a href="">投诉建议</a></li>
+                        <li><a href="">发票开具</a></li>
+                        <li><a href="">社区交流</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="">服务商</a></li>
+                        <li><a href="">商家入驻</a></li>
+                        <li><a href="">申请加盟</a></li>
+                        <li><a href="">商家登陆</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-center-right">
+                <ul>
+                    <li>
+                        <img src="images/20170721170916.png" alt="">
+                        <p>关注公众号</p>
+                    </li>
+                    <li>
+                        <img src="images/20170721170916.png" alt="">
+                        <p>穿越到手机</p>
+                    </li>
+                    <li>
+                        <img src="images/20170721182548.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottoom-center">
+                <div class="bottoom-center-left">
+                    <img src="images/douflogo.png" alt="">
+                    <p>工作呀旗下企业服务平台</p>
+                </div>
+                <div class="bottoom-center-right">
+                    <ul class="bottoom-center-right-top">
+                        <li>
+                            <a href="">关于豆腐</a>
+                        </li>
+                        <li class="wire"></li>
+                        <li>
+                            <a href="">联系我们</a>
+                        </li>
+                        <li class="wire"></li>
+                        <li>
+                            <a href="">加入豆腐</a>
+                        </li>
+                        <li class="wire"></li>
+                        <li>
+                            <a href="">校园招聘</a>
+                        </li>
+                        <li class="wire"></li>
+                        <li>
+                            <a href="">豆腐社区</a>
+                        </li>
+                        <li class="wire"></li>
+                        <li>
+                            <a href="">隐私政策</a>
+                        </li>
+                        <li class="wire"></li>
+                        <li>
+                            <a href="">注册协议</a>
+                        </li>
+                        <li class="wire"></li>
+                        <li>
+                            <a href="http://nanjing.gongzuoya.com/">工作呀</a>
+                        </li>
+                    </ul>
+                    <ul  class="bottoom-center-right-center">
+                        <span>友情链接：</span>
+                        <li>
+                            <a href="http://www.uc.cn/">UC</a>
+                        </li>
+                        <li>
+                            <a href="https://www.baidu.com/">百度</a>
+                        </li>
+                        <li>
+                            <a href="http://www.qq.com/">腾讯</a>
+                        </li>
+                        <li>
+                            <a href="https://www.1688.com/">阿里巴巴</a>
+                        </li>
+                        <li>
+                            <a href="https://www.jd.com/">京东商城</a>
+                        </li>
+                        <li>
+                            <a href="https://www.vip.com/">唯品会</a>
+                        </li>
+                        <li>
+                            <a href="http://www.pizzahut.com.cn/">必胜客</a>
+                        </li>
+                        <li>
+                            <a href="http://china.nba.com/">NBA</a>
+                        </li>
+                        <li>
+                            <a href="https://www.360.cn/">360</a>
+                        </li>
+                        <li>
+                            <a href="https://www.mi.com/">小米商城</a>
+                        </li>
+                        <li>
+                            <a href="http://tool.chinaz.com/">站长工具</a>
+                        </li>
+                        <li>
+                            <a href="http://www.uc.cn/">UC</a>
+                        </li>
+                        <li>
+                            <a href="https://www.baidu.com/">百度</a>
+                        </li>
+                        <li>
+                            <a href="http://www.qq.com/">腾讯</a>
+                        </li>
+                        <li>
+                            <a href="https://www.1688.com/">阿里巴巴</a>
+                        </li>
+                        <li>
+                            <a href="https://www.jd.com/">京东商城</a>
+                        </li>
+                        <li>
+                            <a href="https://www.vip.com/">唯品会</a>
+                        </li>
+                        <li>
+                            <a href="http://www.pizzahut.com.cn/">必胜客</a>
+                        </li>
+                        <li>
+                            <a href="http://china.nba.com/">NBA</a>
+                        </li>
+                        <li>
+                            <a href="https://www.360.cn/">360</a>
+                        </li>
+                        <li>
+                            <a href="https://www.mi.com/">小米商城</a>
+                        </li>
+                        <li>
+                            <a href="http://tool.chinaz.com/">站长工具</a>
+                        </li>
+                        <li>
+                            <a href="http://www.jumei.com/">聚美优品</a>
+                        </li>
+                        <li>
+                            <a href="">戴夫</a>
+                        </li>
+                    </ul>
+                    <ul class="bottoom-center-right-bottom">
+                        <li>
+                            <span>©2010-2017 DOUF.COM.CN</span>
+                            <a href="">苏ICP备16014039号-3</a>
+                            <span>人力资源服务证号320106162005</span>
+                        </li>
+                        <li>
+                            <p>南京笃信教育科技有限公司&nbsp;&nbsp;&nbsp;版权所有</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<!--footerend-->
+<script src="js/jquery1.8.3.min.js"></script>
+<script src="js/doufu-my-profile.js"></script>
+<script src="js/city-picker.data.js"></script>
+<script src="js/city-picker.js"></script>
+<script>
+    $(function() {
+        $(".my-profile-left-nav-big").eq(2).find(".my-profile-left-nav-small a").eq(0).addClass("h");
+        $(".subnav").on("click",function(){
+            var i=$(this).index();
+            $(".my-profile-left-nav-big").eq(2).find(".my-profile-left-nav-small a").eq(i).addClass("h").siblings("a").removeClass("h");
+        })
+    })
+</script>
+<script>
+    //图片上传预览    IE是用了滤镜。
+    function previewImage(file, imgid) {
+        var MAXWIDTH = 100;
+        var MAXHEIGHT = 100;
+        //          var div = document.getElementById('preview');
+        if (file.files && file.files[0]) {
+            //              div.innerHTML ='<img id=imghead onclick=$("#previewImg").click()>';
+            var img = document.getElementById(imgid);
+            img.onload = function() {
+                var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+                img.width = rect.width;
+                img.height = rect.height;
+                //                 img.style.marginLeft = rect.left+'px';
+                img.style.marginTop = rect.top + 'px';
+            }
+            var reader = new FileReader();
+            reader.onload = function(evt) {
+                img.src = evt.target.result;
+            }
+            reader.readAsDataURL(file.files[0]);
+        } else //兼容IE
+        {
+            var sFilter = 'filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src="';
+            file.select();
+            var src = document.selection.createRange().text;
+            div.innerHTML = '<img id=imghead>';
+            var img = document.getElementById('imghead');
+            img.filters.item('DXImageTransform.Microsoft.AlphaImageLoader').src = src;
+            var rect = clacImgZoomParam(MAXWIDTH, MAXHEIGHT, img.offsetWidth, img.offsetHeight);
+            status = ('rect:' + rect.top + ',' + rect.left + ',' + rect.width + ',' + rect.height);
+            div.innerHTML = "<div id=divhead style='width:" + rect.width + "px;height:" + rect.height + "px;margin-top:" + rect.top + "px;" + sFilter + src + "\"'></div>";
+        }
+    }
+
+    function clacImgZoomParam(maxWidth, maxHeight, width, height) {
+        var param = {
+            top: 0,
+            left: 0,
+            width: width,
+            height: height
+        };
+        if (width > maxWidth || height > maxHeight) {
+            rateWidth = width / maxWidth;
+            rateHeight = height / maxHeight;
+
+            if (rateWidth > rateHeight) {
+                param.width = maxWidth;
+                param.height = Math.round(height / rateWidth);
+            } else {
+                param.width = Math.round(width / rateHeight);
+                param.height = maxHeight;
+            }
+        }
+        param.left = Math.round((maxWidth - param.width) / 2);
+        param.top = Math.round((maxHeight - param.height) / 2);
+        return param;
+    }
+</script>

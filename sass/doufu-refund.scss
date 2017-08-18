@@ -1,0 +1,484 @@
+@import "base";
+.cover-all {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.refund {
+    margin: 0 auto 40px auto;
+    width: 1200px;
+    .refund-nav {
+        width: 1200px;
+        height: 49px;
+        border-bottom: 1px solid #B3B3B3;
+        font-size: 18px;
+        a {
+            padding: 0 30px;
+            display: inline-block;
+            line-height: 48px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        a.h {
+            color: #FF9700;
+            border-bottom: 2px solid #FF9700;
+        }
+        span {
+            color: #999;
+        }
+    }
+    .refund-column {
+        margin: 20px 0;
+        width: 1198px;
+        height: 38px;
+        border: 1px solid #E6E6E6;
+        background: #fff;
+        color: #666;
+        line-height: 38px;
+        .refund-column-name {
+            margin-left: 87px;
+        }
+        .refund-column-name:nth-child(1) {
+            margin-left: 100px;
+        }
+        .refund-column-name:nth-child(2) {
+            margin-left: 300px;
+        }
+        .refund-column-name:nth-child(3) {
+            margin-left: 100px;
+        }
+    }
+    .refund-center {
+        border-collapse: collapse;
+        width: 1198px;
+        border: 1px solid #E3F8FF;
+        margin-bottom: 10px;
+        &:hover {
+            border: 1px solid #00FFFF;
+        }
+        tbody{
+            .refund-line-top {
+                overflow: hidden;
+                width: 1198px;
+                height: 49px;
+                border-bottom: 1px solid #E3F8FF;
+                background: #F3FCFF;
+                .refund-line-time {
+                    margin-left: 35px;
+                    line-height: 49px;
+                    color: #000;
+                }
+                .refund-line-time:nth-child(2) {
+                    margin-left: 45px;
+                    color: #666;
+                }
+                .refund-line-time:nth-child(3) {
+                    margin-left: 80px;
+                    color: #333;
+                }
+                .refund-line-time:nth-child(4) {
+                    float: right;
+                    font-size: 16px;
+                    margin-right: 35px;
+                    span {
+                        margin: 0 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .refund-indent {
+                overflow: hidden;
+                width: 1198px;
+                background: #fff;
+                td{
+                    height: 140px;
+                    width: 130px;
+                    border-right: 1px solid #E3F8FF;
+                    border-top: none;
+                    border-bottom: none;
+                }
+                td:last-of-type{
+                    border-right: none;
+                }
+                .refund-row {
+                    float: left;
+                    padding: 20px 0;
+                    height: 100px;
+                    width: 655px;
+                    border-bottom: 1px solid #E3F8FF;
+                    .refund-breath {
+                        float: left;
+                        margin-left: 35px;
+                        color: #333333;
+                        height: 100px;
+                        font-size: 14px;
+                        text-align: center;
+                        .refund-logo {
+                            overflow: hidden;
+                            float: left;
+                            width: 100px;
+                            height: 100px;
+                            background: url("../images/20170727160710.jpg")no-repeat 100% 100%;
+                            background-size: contain;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            .refund-logo-name {
+                                padding: 5px;
+                                overflow: hidden;
+                                max-width: 70px;
+                                max-height: 86px;
+                                background: rgba(0, 0, 0, 0.6);
+                                color: #ffffff;
+                                line-height: 18px;
+                                font-size: 14px;
+                                text-align: left;
+                            }
+                        }
+                        .refund-item {
+                            float: left;
+                            width: 250px;
+                            margin-left: 10px;
+                            text-align: left;
+                            font-weight: lighter;
+                            p {
+                                margin-top: 30px;
+                                color: #333;
+                            }
+                            p:last-of-type {
+                                margin-top: 10px;
+                                color: #999;
+                            }
+                        }
+                        .refund-cost {
+                            float: left;
+                            width: 130px;
+                            line-height: 100px;
+                            color: #333;
+                        }
+                    }
+                }
+                .refund-unit {
+                    float: left;
+                    width: 130px;
+                    font-size: 14px;
+                    text-align: center;
+                    span {
+                        line-height: 36px;
+                    }
+                    a {
+                        display: block;
+                        cursor: pointer;
+                        &:hover{
+                            color: #00aaee;
+                        }
+                    }
+                    em{
+                        font-style: normal;
+                        display: block;
+                    }
+                }
+                .refund-affirm {
+                    float: left;
+                    width: 148px;
+                    text-align: center;
+                    a {
+                        display: block;
+                        margin-top: 8px;
+                        color: #fff;
+                        span{
+                            margin: 0 auto;
+                            display: inline-block;
+                            padding: 0 10px;
+                            height: 20px;
+                            background: #00aaee;
+                            border: 1px solid #00aaee;
+                            line-height: 18px;
+                            &:hover{
+                                background: #009adb;
+                            border: 1px solid #009adb;
+                            }
+                        }
+                        .estimate{
+                            color: #666;
+                            background: #fff;
+                            border: 1px solid #666;
+                            &:hover{
+                                color: #fff;
+                            background: #00aaee;
+                            border: 1px solid #00aaee;
+                            }
+                        }
+                    }
+                    a:nth-child(2) {
+                        color: #ff9700;
+                        span{
+                            background: #fff;
+                            border: 1px solid #ff9700;
+                            &:hover{
+                                color: #fff;
+                            background: #ff9700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.nominate-bottom {
+    margin: 0 auto;
+    width: 1200px;
+    ul {
+        overflow: hidden;
+        li {
+            float: left;
+            margin: 0 20px 20px 0;
+            width: 285px;
+            height: 340px;
+            background: #fff;
+            img {
+                width: 285px;
+                height: 285px;
+            }
+            p {
+                height: 55px;
+                color: #808080;
+                line-height: 55px;
+                span {
+                    float: left;
+                    margin-left: 15px;
+                    font-size: 16px;
+                }
+                span:nth-child(2) {
+                    float: right;
+                    margin-right: 10px;
+                    color: #FF9700;
+                }
+            }
+        }
+        li:nth-child(4n) {
+            margin: 0 0 20px 0;
+        }
+    }
+    .nominate {
+        margin: 20px 0;
+        i {
+            font-size: 18px;
+            color: #333333;
+        }
+    }
+}
+
+.cover-avatar,.cover-avatar-two {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+    margin-left: -300px;
+    margin-top: -200px;
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    border: 1px solid #999;
+    .cover-top {
+        width: 100%;
+        height: 40px;
+        background: #00aaee;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        line-height: 40px;
+        span {
+            float: right;
+            margin-right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+    .cover-bottom-two {
+        .cover-top-flow-line-all {
+            .cover-top-flow-line:nth-child(1) {
+                background: #22B573;
+            }
+        }
+    }
+    .cover-bottom-three {
+        .cover-top-flow-line-all {
+            .cover-top-flow-line{
+                background: #22B573;
+            }
+        }
+    }
+    .cover-bottom,
+    .cover-bottom-two,
+    .cover-bottom-three {
+        overflow: auto;
+        padding: 0 25px;
+        height: 360px;
+        .cover-top-flow-line-all {
+            height: 54px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cover-top-flow-line {
+                width: 210px;
+                height: 1px;
+                background: #ccc;
+            }
+        }
+        .cover-top-flow {
+            margin-top: -54px;
+            height: 62px;
+            padding: 10px 25px;
+            border-bottom: 1px solid #999999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .cover-top-flow-one {
+                width: 72px;
+                text-align: center;
+                p {
+                    margin: 0 auto;
+                    width: 20px;
+                    height: 20px;
+                    font-size: 14px;
+                    @include br4(50%);
+                    border: 1px solid #ccc;
+                    color: #999;
+                    background: #fff;
+                }
+                span {
+                    color: #666;
+                    line-height: 28px;
+                }
+            }
+            .cover-top-flow-one.h {
+                p {
+                    border: 2px solid #22B573;
+                    color: #22B573;
+                }
+            }
+        }
+        .cover-bottom-center {
+            padding: 10px 20px;
+            color: #999;
+            font-size: 14px;
+            .balance {
+                overflow: hidden;
+                line-height: 20px;
+                margin-bottom: 10px;
+                p{
+                    text-indent: 24px;
+                    a{
+                        color: #00aaee;
+                    }
+                }
+                span{
+                    float: left;
+                    text-align: right;
+                }
+                em{
+                    margin-top: 25px;
+                    font-style: normal;
+                    float: left;
+                    text-align: right;
+                }
+                i {
+                    margin-top: 5px;
+                    float: left;
+                    margin-right: 5px;
+                    color: #FF000D;
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+                .permit-all{
+            overflow: hidden;
+            position: relative;
+            margin-right: 20px;
+            float: left;
+            width: 80px;
+            height: 80px;
+            cursor: pointer;
+            .plus{
+                margin-top: 10px;
+                font-size: 30px;
+                text-align: center;
+                color: #999;
+                text-indent: 0px;
+            }
+            .plus-file{
+                text-align: center;
+                font-size: 12px;
+                color: #999;
+                text-indent: 0px;
+            }
+            #addCommodityIndex{
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 80px;
+                width: 80px;
+            }
+        }
+            }
+            textarea{
+                padding: 10px;
+                width: 480px;
+                height: 80px;
+                resize: none;
+                color: #666;
+            }
+            .cover-bottom-btn {
+                overflow: hidden;
+                margin: 20px auto;
+                width: 234px;
+                height: 32px;
+                font-size: 14px;
+                color: #666;
+                em {
+                    display: inline-block;
+                    height: 30px;
+                    width: 100px;
+                    text-align: center;
+                    line-height: 30px;
+                    font-style: normal;
+                    cursor: pointer;
+                    border: 1px solid #CCCCCC;
+                    background: #CCCCCC;
+                    cursor: pointer;
+                    color: #fff;
+                    @include br4(3px);
+                    &:hover {
+                        background: #00aaee;
+                        border: 1px solid #00aaee;
+                    }
+                }
+                i {
+                    margin: 0 15px;
+                    font-size: 19px;
+                }
+            }
+            .prosperity{
+                p{
+                    font-size: 14px;
+                    color: #333;
+                    text-align: center;
+                }
+                p:nth-child(1){
+                    font-size: 70px;
+                    color: #ff9700;
+                }
+            }
+        }
+    }
+}

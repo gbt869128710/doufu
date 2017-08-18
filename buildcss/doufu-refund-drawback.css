@@ -1,0 +1,523 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html,
+body {
+  height: 100%;
+  font-family: 'Microsoft YaHei', 'iconfont';
+  font-size: 12px; }
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #333333; }
+
+ol,
+ul,
+li {
+  list-style-type: none; }
+
+input {
+  outline: none;
+  border: none;
+  background: none; }
+
+i {
+  font-style: normal; }
+
+/*border-radius*/
+.refund {
+  margin: 0 auto 40px auto;
+  width: 1200px; }
+  .refund .refund-nav {
+    margin-bottom: 10px;
+    width: 1200px;
+    height: 49px;
+    border-bottom: 1px solid #B3B3B3;
+    font-size: 14px; }
+    .refund .refund-nav a {
+      display: inline-block;
+      line-height: 48px;
+      color: #000; }
+  .refund .refund-present {
+    overflow: hidden;
+    width: 1198px;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 10px;
+    background: #fff; }
+    .refund .refund-present .center-perfect {
+      margin-top: 60px;
+      float: left;
+      width: 897px; }
+      .refund .refund-present .center-perfect .perfect-row {
+        position: relative;
+        width: 897px;
+        height: 30px;
+        margin-bottom: 20px; }
+        .refund .refund-present .center-perfect .perfect-row .sky {
+          float: left;
+          width: 11px;
+          height: 30px; }
+        .refund .refund-present .center-perfect .perfect-row i {
+          float: left;
+          margin-right: 5px;
+          color: #FF000D;
+          font-size: 20px;
+          line-height: 36px; }
+        .refund .refund-present .center-perfect .perfect-row .perfect-row-left {
+          float: left;
+          width: 190px;
+          font-size: 14px;
+          color: #333;
+          line-height: 30px;
+          text-align: right; }
+        .refund .refund-present .center-perfect .perfect-row .perfect-row-radio {
+          float: left;
+          margin-top: 9px; }
+        .refund .refund-present .center-perfect .perfect-row .perfect-row-right {
+          float: left;
+          font-size: 14px;
+          color: #333;
+          line-height: 30px; }
+        .refund .refund-present .center-perfect .perfect-row .firm {
+          margin-left: 5px;
+          font-size: 12px;
+          color: #999;
+          line-height: 30px; }
+        .refund .refund-present .center-perfect .perfect-row .null {
+          margin-right: 20px; }
+        .refund .refund-present .center-perfect .perfect-row .phone {
+          float: left;
+          padding: 0 10px;
+          width: 220px;
+          height: 28px;
+          line-height: 28px;
+          border: 1px solid #999; }
+        .refund .refund-present .center-perfect .perfect-row .phone-select {
+          float: left;
+          padding: 0 10px;
+          width: 220px;
+          height: 28px;
+          line-height: 28px;
+          border: 1px solid #999;
+          outline: none; }
+          .refund .refund-present .center-perfect .perfect-row .phone-select .trigon {
+            float: right;
+            line-height: 30px;
+            font-size: 20px; }
+          .refund .refund-present .center-perfect .perfect-row .phone-select .phone-text {
+            color: #999; }
+        .refund .refund-present .center-perfect .perfect-row .choose-select {
+          display: none;
+          position: absolute;
+          left: 204px;
+          top: 29px;
+          z-index: 2;
+          width: 240px;
+          background: #fff;
+          border: 1px solid #999; }
+          .refund .refund-present .center-perfect .perfect-row .choose-select .choose-option {
+            height: 20px;
+            cursor: default;
+            font-size: 14px;
+            color: #666; }
+            .refund .refund-present .center-perfect .perfect-row .choose-select .choose-option:hover {
+              background: #00aaee;
+              color: #fff; }
+            .refund .refund-present .center-perfect .perfect-row .choose-select .choose-option p {
+              float: left;
+              margin-left: 15px;
+              line-height: 20px; }
+          .refund .refund-present .center-perfect .perfect-row .choose-select .choose-option.h {
+            background: #00aaee;
+            color: #fff; }
+        .refund .refund-present .center-perfect .perfect-row #slider {
+          float: left;
+          width: 242px;
+          height: 30px;
+          position: relative;
+          border-radius: 2px;
+          background-color: #dae2d0;
+          overflow: hidden;
+          text-align: center;
+          user-select: none;
+          -moz-user-select: none;
+          -webkit-user-select: none; }
+        .refund .refund-present .center-perfect .perfect-row #slider_bg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          background-color: #7AC23C;
+          z-index: 1; }
+        .refund .refund-present .center-perfect .perfect-row #label {
+          width: 46px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 28px;
+          line-height: 28px;
+          border: 1px solid #cccccc;
+          background: #fff;
+          z-index: 3;
+          cursor: move;
+          color: #ff9e77;
+          font-size: 16px;
+          font-weight: 900; }
+        .refund .refund-present .center-perfect .perfect-row #labelTip {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          font-size: 13px;
+          font-family: 'Microsoft Yahei', serif;
+          color: #787878;
+          line-height: 28px;
+          text-align: center;
+          z-index: 2; }
+      .refund .refund-present .center-perfect .perfect-row:nth-child(1) {
+        height: 58px; }
+      .refund .refund-present .center-perfect .perfect-row:nth-child(6), .refund .refund-present .center-perfect .perfect-row:nth-child(7) {
+        height: 100px; }
+      .refund .refund-present .center-perfect .enroll-code {
+        display: none; }
+      .refund .refund-present .center-perfect .permit-all {
+        overflow: hidden;
+        position: relative;
+        margin-right: 20px;
+        float: left;
+        width: 80px;
+        height: 80px;
+        cursor: pointer; }
+        .refund .refund-present .center-perfect .permit-all .plus {
+          font-size: 40px;
+          text-align: center;
+          color: #999; }
+        .refund .refund-present .center-perfect .permit-all .plus-file {
+          font-size: 14px;
+          text-align: center;
+          color: #999; }
+        .refund .refund-present .center-perfect .permit-all #addCommodityIndex {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 80px;
+          width: 80px; }
+      .refund .refund-present .center-perfect .attachment-all {
+        overflow: hidden;
+        position: relative;
+        margin-top: 5px;
+        float: left;
+        width: 100px;
+        height: 20px;
+        cursor: pointer;
+        border: 1px solid #999; }
+        .refund .refund-present .center-perfect .attachment-all .attachment-file {
+          font-size: 12px;
+          text-align: center;
+          color: #000;
+          line-height: 20px; }
+        .refund .refund-present .center-perfect .attachment-all .attachment {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100px;
+          height: 20px;
+          opacity: 0; }
+      .refund .refund-present .center-perfect textarea {
+        float: left;
+        width: 360px;
+        height: 88px;
+        padding: 5px;
+        resize: none;
+        outline: none;
+        border: 1px solid #999; }
+      .refund .refund-present .center-perfect .perfect-code-hint {
+        overflow: hidden;
+        margin: -20px 0 15px 203px;
+        width: 380px;
+        color: #999;
+        font-size: 12px; }
+        .refund .refund-present .center-perfect .perfect-code-hint .choose {
+          float: left;
+          margin: 20px 0 0 0;
+          width: 160px;
+          height: 30px;
+          background: #00aaee;
+          color: #fff;
+          font-size: 14px; }
+        .refund .refund-present .center-perfect .perfect-code-hint .enroll-phone-red {
+          display: none;
+          float: left;
+          margin: 27px 0 0 10px;
+          width: 14px;
+          height: 14px;
+          background: #FF000D;
+          border-radius: 50%;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -o-border-radius: 50%;
+          -ms-border-radius: 50%;
+          color: #fff;
+          text-align: center;
+          line-height: 14px;
+          font-weight: bold;
+          text-align: justifys; }
+        .refund .refund-present .center-perfect .perfect-code-hint span {
+          display: none;
+          margin: 24px 0 0 0;
+          float: left;
+          color: #FF000D; }
+      .refund .refund-present .center-perfect .enroll-bottom-breath {
+        margin: 0 auto;
+        width: 210px;
+        height: 20px; }
+        .refund .refund-present .center-perfect .enroll-bottom-breath a {
+          margin-left: 22px;
+          color: #333;
+          font-size: 14px;
+          color: #00aaee; }
+    .refund .refund-present .refund-right {
+      float: right;
+      padding: 20px;
+      width: 260px;
+      height: 600px;
+      border-left: 1px solid #CCCCCC; }
+      .refund .refund-present .refund-right .order {
+        height: 38px;
+        width: 260px;
+        border-bottom: 1px solid #CCCCCC;
+        font-size: 16px;
+        color: #333; }
+      .refund .refund-present .refund-right .refund-breath {
+        padding: 20px 0 40px 0;
+        color: #333333;
+        height: 100px;
+        width: 260px;
+        border-bottom: 1px solid #CCCCCC;
+        font-size: 14px;
+        text-align: center; }
+        .refund .refund-present .refund-right .refund-breath .refund-logo {
+          overflow: hidden;
+          float: left;
+          width: 100px;
+          height: 100px;
+          background: url("../images/20170727160710.jpg") no-repeat 100% 100%;
+          background-size: contain;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .refund .refund-present .refund-right .refund-breath .refund-logo .refund-logo-name {
+            padding: 5px;
+            overflow: hidden;
+            max-width: 70px;
+            max-height: 86px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            line-height: 18px;
+            font-size: 14px;
+            text-align: left; }
+        .refund .refund-present .refund-right .refund-breath .refund-item {
+          float: left;
+          width: 150px;
+          height: 100px;
+          margin-left: 10px;
+          text-align: left;
+          font-weight: lighter;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .refund .refund-present .refund-right .refund-breath .refund-item div p {
+            color: #333; }
+          .refund .refund-present .refund-right .refund-breath .refund-item div p:last-of-type {
+            margin-top: 10px;
+            color: #999; }
+      .refund .refund-present .refund-right .refund-details {
+        margin-top: 40px; }
+        .refund .refund-present .refund-right .refund-details li {
+          font-size: 14px;
+          line-height: 24px; }
+          .refund .refund-present .refund-right .refund-details li span {
+            display: inline-block;
+            width: 80px;
+            text-align: justify;
+            text-align-last: justify;
+            color: #999; }
+          .refund .refund-present .refund-right .refund-details li i {
+            color: #333; }
+        .refund .refund-present .refund-right .refund-details li:nth-child(1) i {
+          color: #00aaee; }
+        .refund .refund-present .refund-right .refund-details li:nth-child(3) i {
+          color: #00aaee; }
+  .refund .refund-center {
+    border-collapse: collapse;
+    width: 1198px;
+    border: 1px solid #E3F8FF;
+    margin-bottom: 10px; }
+    .refund .refund-center:hover {
+      border: 1px solid #00FFFF; }
+    .refund .refund-center tbody .refund-line-top {
+      overflow: hidden;
+      width: 1198px;
+      height: 49px;
+      border-bottom: 1px solid #E3F8FF;
+      background: #F3FCFF; }
+      .refund .refund-center tbody .refund-line-top .refund-line-time {
+        margin-left: 35px;
+        line-height: 49px;
+        color: #000; }
+      .refund .refund-center tbody .refund-line-top .refund-line-time:nth-child(2) {
+        margin-left: 45px;
+        color: #666; }
+      .refund .refund-center tbody .refund-line-top .refund-line-time:nth-child(3) {
+        margin-left: 80px;
+        color: #333; }
+      .refund .refund-center tbody .refund-line-top .refund-line-time:nth-child(4) {
+        float: right;
+        font-size: 16px;
+        margin-right: 35px; }
+        .refund .refund-center tbody .refund-line-top .refund-line-time:nth-child(4) span {
+          margin: 0 10px;
+          cursor: pointer; }
+    .refund .refund-center tbody .refund-indent {
+      overflow: hidden;
+      width: 1198px;
+      background: #fff; }
+      .refund .refund-center tbody .refund-indent td {
+        height: 140px;
+        width: 130px;
+        border-right: 1px solid #E3F8FF;
+        border-top: none;
+        border-bottom: none; }
+      .refund .refund-center tbody .refund-indent td:last-of-type {
+        border-right: none; }
+      .refund .refund-center tbody .refund-indent .refund-row {
+        float: left;
+        padding: 20px 0;
+        height: 100px;
+        width: 655px;
+        border-bottom: 1px solid #E3F8FF; }
+        .refund .refund-center tbody .refund-indent .refund-row .refund-breath {
+          float: left;
+          margin-left: 35px;
+          color: #333333;
+          height: 100px;
+          font-size: 14px;
+          text-align: center; }
+          .refund .refund-center tbody .refund-indent .refund-row .refund-breath .refund-logo {
+            overflow: hidden;
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: url("../images/20170727160710.jpg") no-repeat 100% 100%;
+            background-size: contain;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .refund .refund-center tbody .refund-indent .refund-row .refund-breath .refund-logo .refund-logo-name {
+              padding: 5px;
+              overflow: hidden;
+              max-width: 70px;
+              max-height: 86px;
+              background: rgba(0, 0, 0, 0.6);
+              color: #ffffff;
+              line-height: 18px;
+              font-size: 14px;
+              text-align: left; }
+          .refund .refund-center tbody .refund-indent .refund-row .refund-breath .refund-item {
+            float: left;
+            width: 250px;
+            margin-left: 10px;
+            text-align: left;
+            font-weight: lighter; }
+            .refund .refund-center tbody .refund-indent .refund-row .refund-breath .refund-item p {
+              margin-top: 30px;
+              color: #333; }
+            .refund .refund-center tbody .refund-indent .refund-row .refund-breath .refund-item p:last-of-type {
+              margin-top: 10px;
+              color: #999; }
+          .refund .refund-center tbody .refund-indent .refund-row .refund-breath .refund-cost {
+            float: left;
+            width: 130px;
+            line-height: 100px;
+            color: #333; }
+      .refund .refund-center tbody .refund-indent .refund-unit {
+        float: left;
+        width: 130px;
+        font-size: 14px;
+        text-align: center; }
+        .refund .refund-center tbody .refund-indent .refund-unit span {
+          line-height: 36px; }
+        .refund .refund-center tbody .refund-indent .refund-unit a {
+          display: block; }
+      .refund .refund-center tbody .refund-indent .refund-affirm {
+        float: left;
+        width: 148px;
+        text-align: center; }
+        .refund .refund-center tbody .refund-indent .refund-affirm a {
+          display: block;
+          margin-top: 8px;
+          color: #fff; }
+          .refund .refund-center tbody .refund-indent .refund-affirm a span {
+            margin: 0 auto;
+            display: inline-block;
+            padding: 0 10px;
+            height: 20px;
+            background: #00aaee;
+            border: 1px solid #00aaee;
+            line-height: 18px; }
+            .refund .refund-center tbody .refund-indent .refund-affirm a span:hover {
+              background: #009adb;
+              border: 1px solid #009adb; }
+          .refund .refund-center tbody .refund-indent .refund-affirm a .estimate {
+            color: #666;
+            background: #fff;
+            border: 1px solid #666; }
+            .refund .refund-center tbody .refund-indent .refund-affirm a .estimate:hover {
+              color: #fff;
+              background: #00aaee;
+              border: 1px solid #00aaee; }
+        .refund .refund-center tbody .refund-indent .refund-affirm a:nth-child(2) {
+          color: #ff9700; }
+          .refund .refund-center tbody .refund-indent .refund-affirm a:nth-child(2) span {
+            background: #fff;
+            border: 1px solid #ff9700; }
+            .refund .refund-center tbody .refund-indent .refund-affirm a:nth-child(2) span:hover {
+              color: #fff;
+              background: #ff9700; }
+
+.nominate-bottom {
+  margin: 0 auto;
+  width: 1200px; }
+  .nominate-bottom ul {
+    overflow: hidden; }
+    .nominate-bottom ul li {
+      float: left;
+      margin: 0 20px 20px 0;
+      width: 285px;
+      height: 340px;
+      background: #fff; }
+      .nominate-bottom ul li img {
+        width: 285px;
+        height: 285px; }
+      .nominate-bottom ul li p {
+        height: 55px;
+        color: #808080;
+        line-height: 55px; }
+        .nominate-bottom ul li p span {
+          float: left;
+          margin-left: 15px;
+          font-size: 16px; }
+        .nominate-bottom ul li p span:nth-child(2) {
+          float: right;
+          margin-right: 10px;
+          color: #FF9700; }
+    .nominate-bottom ul li:nth-child(4n) {
+      margin: 0 0 20px 0; }
+  .nominate-bottom .nominate {
+    margin: 20px 0; }
+    .nominate-bottom .nominate i {
+      font-size: 18px;
+      color: #333333; }

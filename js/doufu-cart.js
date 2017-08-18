@@ -15,18 +15,9 @@ $(function(){
         $("html,body").animate({scrollTop:0}, 800);
     }); 
     //购物车
+    
     $(window).on("scroll",function(){ 
-		var w_h=$(window).height();
-        var a_h=$(".a").offset().top;
-        var b_h=$(".b").offset().top;
-        if(b_h>a_h+100){
-            $(".close").css({"position":"relative"});
-        }else{
-            $(".close").css({"position":"fixed"});
-            if(a_h<w_h){
-				$(".close").css({"position":"relative"});
-			}
-        }
+		scrollload();
         
         
     });
@@ -262,17 +253,7 @@ $(function(){
             }
         }
         money();
-		var w_h=$(window).height();
-        var a_h=$(".a").offset().top;
-        var b_h=$(".b").offset().top;
-        if(b_h>a_h+100){
-            $(".close").css({"position":"relative"});
-        }else{
-            $(".close").css({"position":"fixed"});
-            if(a_h<w_h){
-				$(".close").css({"position":"relative"});
-			}
-        }
+		scrollload();
         
         var arr1=[];
         arr1[0] = $(this).parents(".cease-bottom-row").find(".cease-name").text();
@@ -295,17 +276,7 @@ $(function(){
             }
         }
         money();
-		var w_h=$(window).height();
-        var a_h=$(".a").offset().top;
-        var b_h=$(".b").offset().top;
-        if(b_h>a_h+100){
-            $(".close").css({"position":"relative"});
-        }else{
-            $(".close").css({"position":"fixed"});
-            if(a_h<w_h){
-				$(".close").css({"position":"relative"});
-			}
-        }
+		scrollload();
         
         arr2=[];
         

@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html,
+body {
+  height: 100%;
+  font-family: 'Microsoft YaHei', 'iconfont';
+  font-size: 12px; }
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #333333; }
+
+ol,
+ul,
+li {
+  list-style-type: none; }
+
+input {
+  outline: none;
+  border: none;
+  background: none; }
+
+i {
+  font-style: normal; }
+
+/*border-radius*/
+.cover-all {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); }
+
+.my-profile {
+  overflow: hidden;
+  margin: 0px auto 60px auto;
+  width: 1200px;
+  background: #fff; }
+  .my-profile .my-profile-top {
+    width: 1200px;
+    height: 60px;
+    background: #f5f5f5; }
+  .my-profile .my-profile-right {
+    float: right;
+    padding: 20px;
+    width: 950px;
+    min-height: 880px;
+    background: #fff;
+    border-left: 10px solid #f5f5f5; }
+    .my-profile .my-profile-right .my-profile-right-top {
+      width: 950px;
+      height: 20px; }
+      .my-profile .my-profile-right .my-profile-right-top .column {
+        float: left;
+        font-size: 14px;
+        color: #999; }
+      .my-profile .my-profile-right .my-profile-right-top .column:nth-child(2) {
+        float: right;
+        margin-top: 9px;
+        width: 890px;
+        border-bottom: 1px solid #999; }
+    .my-profile .my-profile-right .my-profile-right-bottom .menu {
+      width: 950px;
+      height: 30px;
+      border-bottom: 1px solid #999; }
+      .my-profile .my-profile-right .my-profile-right-bottom .menu .subnav {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 12px;
+        line-height: 30px;
+        color: #666;
+        cursor: pointer; }
+      .my-profile .my-profile-right .my-profile-right-bottom .menu .subnav.h {
+        font-size: 14px;
+        line-height: 28px;
+        border-bottom: 3px solid #00aaee;
+        color: #00aaee; }
+    .my-profile .my-profile-right .my-profile-right-bottom .center-perfect {
+      display: none;
+      margin-top: 10px;
+      float: left;
+      width: 950px; }
+      .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .advices {
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        width: 910px;
+        height: 70px;
+        background: #F2F2F2; }
+        .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .advices .advices-top {
+          width: 910px;
+          height: 35px;
+          border-bottom: 1px solid #ccc; }
+          .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .advices .advices-top .system {
+            float: left;
+            width: 24px;
+            height: 24px; }
+          .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .advices .advices-top .user {
+            float: left;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -o-border-radius: 50%;
+            -ms-border-radius: 50%; }
+          .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .advices .advices-top .message {
+            margin-left: 5px;
+            float: left;
+            line-height: 24px;
+            font-size: 14px;
+            color: #333333; }
+          .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .advices .advices-top .message-date, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .advices .advices-top .message-time, .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .advices .advices-top .message-remove {
+            margin-left: 10px;
+            float: left;
+            line-height: 24px;
+            font-size: 12px;
+            color: #999; }
+          .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .advices .advices-top .message-remove {
+            float: right;
+            color: #B3B3B3;
+            cursor: pointer; }
+        .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .advices .advices-bottom .message-content {
+          float: left;
+          color: #999;
+          line-height: 40px; }
+        .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .advices .advices-bottom a {
+          float: right;
+          color: #00aaee;
+          line-height: 40px; }
+      .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .message-paging {
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: #999; }
+        .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .message-paging span {
+          display: inline-block;
+          padding: 5px 10px;
+          cursor: pointer; }
+        .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .message-paging .message-paging-top {
+          border: 1px solid #F2F2F2; }
+          .my-profile .my-profile-right .my-profile-right-bottom .center-perfect .message-paging .message-paging-top:hover {
+            border: 1px solid #00aaee; }

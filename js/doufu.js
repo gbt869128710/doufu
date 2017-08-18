@@ -12,40 +12,85 @@ $(function(){
     //幻灯
     var number=$(".pic").length,
         p_w=$(window).width(),
-        i=0,
         set;
     $(".pic").css({"width":p_w});
-    $(".ppt").css({"width":p_w*number});
-    ppt();
-    ppt_();
-    function ppt(){
-        set=setInterval(function(){
-            if(i<number-1){
-                i++;
-
-            }else{
-                i=0;
-            }
-            $(".ppt").stop(true).animate({"left": -i*p_w});
-        },3000)
-    }
-    var number_=$(".pic").length,
-        m=0,
+    $(".ppt").css({"width":p_w*(number+1)});
+    var number_=$(".content-pic").length,
+        pt_w=$(".content-pptall").width(),
         set_;
-    $(".content-pic").css({"width":p_w});
-    $(".content-ppt").css({"width":p_w*number_});
-    ppt();
-    function ppt_(){
-        set_=setInterval(function(){
-            if(m<number_-1){
-                m++;
-
-            }else{
-                m=0;
-            }
-            $(".content-ppt").stop(true).animate({"left": - m*p_w});
-        },3000)
+    $(".content-pic").css({"width":pt_w});
+    $(".content-ppt").css({"width":pt_w*number_});
+    ppt(".content-ppt",".content-pic",-pt_w);
+    function ppt(a,b,c){
+        set=setInterval(function(){
+            $(a).stop(true).animate({
+                "margin-left": c
+            }, 1000, function () {
+                $(b).eq(0).appendTo($(a));
+                $(a).css({
+                    "margin-left": "0px"
+                });
+            });
+        },4000)
     }
+    $(document).ready(function () {
+
+                var i = 0;
+
+                var clone = $(".ppt-all .ppt .pic").first().clone();//克隆第一张图片
+                $(".ppt-all .ppt").append(clone);//复制到列表最后
+                var size = $(".ppt-all .ppt .pic").size();
+               
+
+                for (var j = 0; j < size-1; j++) {
+                    $(".ppt-all .num").append("<li></li>");
+                }
+
+                $(".ppt-all .num li").first().addClass("on");
+
+                /*自动轮播*/
+
+                var t = setInterval(function () { i++; move();},4000);
+
+                /*鼠标悬停事件*/
+
+                $(".ppt-all").hover(function () {
+                    clearInterval(t);//鼠标悬停时清除定时器
+                }, function () {
+                    t = setInterval(function () { i++; move(); }, 4000); //鼠标移出时清除定时器
+                });
+
+
+                /*鼠标滑入原点事件*/
+
+                $(".ppt-all .num li").hover(function () {
+
+                    var index = $(this).index();//获取当前索引值
+                    i = index;
+                    $(".ppt-all .ppt").stop().animate({ left: -index * p_w }, 500);
+                    $(this).addClass("on").siblings().removeClass("on");
+                });
+
+                /*移动事件*/
+                function move() {
+                    if (i == size) {
+                        $(".ppt-all .ppt").css({ left: 0 });
+                        i = 1;
+                    }
+                    if (i == -1) {
+                        $(".ppt-all .ppt").css({ left: -(size - 1) * p_w });
+                        i = size - 2;
+                    }
+                    $(".ppt-all .ppt").stop().animate({ left: -i * p_w }, 500);
+
+                    if (i == size - 1) {
+                        $(".ppt-all .num li").eq(0).addClass("on").siblings().removeClass("on");
+                    } else {
+                        $(".ppt-all .num li").eq(i).addClass("on").siblings().removeClass("on");
+                    }
+                }
+            });
+    
     //切换
     $(".mainnav p").on("mouseover",function(){
         var i=$(this).index();

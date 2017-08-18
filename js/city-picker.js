@@ -61,7 +61,8 @@
             var p = this.getPosition(),
                 placeholder = this.$element.attr('placeholder') || this.options.placeholder,
                 textspan = '<span class="city-picker-span" style="' +
-                    this.getWidthStyle(p.width) + 'height:' +
+                    'width:' +
+                    320 + 'px;height:' +
                     30 + 'px;line-height:' + 30 + 'px;">' +
                     (placeholder ? '<span class="placeholder">' + placeholder + '</span>' : '') +
                     '<span class="title"></span><div class="arrow"></div>' + '</span>',

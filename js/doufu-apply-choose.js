@@ -102,7 +102,6 @@ $('.choose-select').hide();
         var b=0;
         for(var i=0;i<$(".phone").length;i++){
             var a=$(".phone").eq(i).children(".phone-text").text();
-            console.log(a);
             if(!a){
                 $(".phone").eq(i).css({"border":"1px solid red"});
                 $(".choose-code-hint .enroll-phone-red").show();

@@ -1,0 +1,336 @@
+@import "base";
+.cover-all {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.my-profile-top {
+    width: 100%;
+    height: 60px;
+    background: #f5f5f5;
+}
+
+.my-profile {
+    margin: 0px auto 60px auto;
+    width: 1200px;
+    .my-profile-right {
+        position: relative;
+        float: right;
+        padding: 20px;
+        width: 950px;
+        min-height: 900px;
+        background: #fff;
+        border-left: 10px solid #f5f5f5;
+        .my-profile-right-top {
+            width: 950px;
+            height: 20px;
+            .column {
+                float: left;
+                font-size: 14px;
+                color: #999;
+            }
+            .column:nth-child(2) {
+                float: right;
+                margin-top: 9px;
+                width: 890px;
+                border-bottom: 1px solid #999;
+            }
+        }
+        .my-profile-right-bottom {
+            .menu {
+                width: 950px;
+                height: 30px;
+                border-bottom: 1px solid #999;
+                .subnav {
+                    display: inline-block;
+                    margin-right: 15px;
+                    font-size: 12px;
+                    line-height: 30px;
+                    color: #666;
+                    cursor: pointer;
+                }
+                .subnav.h {
+                    font-size: 14px;
+                    line-height: 28px;
+                    border-bottom: 3px solid #00aaee;
+                    color: #00aaee;
+                }
+            }
+            .center-perfect {
+                display: none;
+                margin-top: 20px;
+                float: left;
+                width: 950px;
+                .center-content,.center-content-sort {
+                    overflow: hidden;
+                    width: 950px;
+                    font-size: 12px;
+                    color: #333;
+                    h4 {
+                        color: #000;
+                        font-size: 14px;
+                        font-weight: inherit;
+                    }
+                    .classify {
+                        ul {
+                            margin-top: 20px;
+                            overflow: hidden;
+                            p {
+                                float: left;
+                                color: #666;
+                                line-height: 30px;
+                            }
+                            li {
+                                float: left;
+                                padding: 0 5px;
+                                height: 28px;
+                                max-width: 110px;
+                                border: 1px solid #999;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                line-height: 28px;
+                                color: #666;
+                            }
+                            span {
+                                float: left;
+                                margin: 0 5px;
+                                line-height: 30px;
+                            }
+                            .alter {
+                                float: left;
+                                margin-left: 10px;
+                                color: #00aaee;
+                                line-height: 30px;
+                                i {
+                                    margin: 0 5px;
+                                }
+                                em {
+                                    font-style: normal;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                    .sort {
+                        overflow: hidden;
+                        margin: 5px 0;
+                        width: 950px;
+                        ul {
+                            float: left;
+                            margin: 10px 0 10px 10px;
+                            overflow: hidden;
+                            p {
+                                float: left;
+                                color: #666;
+                                line-height: 30px;
+                            }
+                            li {
+                                float: left;
+                                padding: 0 10px;
+                                //                    max-width: 110px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                line-height: 12px;
+                                border-right: 1px solid #666;
+                                color: #666;
+                            }
+                            li:last-of-type {
+                                border-right: none;
+                            }
+                        }
+                        .alter {
+                            float: left;
+                            margin-top: 3px;
+                            margin-left: 10px;
+                            color: #00aaee;
+                            line-height: 24px;
+                            i {
+                                margin: 0 5px;
+                            }
+                            em {
+                                font-style: normal;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .append {
+                        overflow: hidden;
+                        margin: 20px 0 0 50px;
+                        width: 98px;
+                        height: 28px;
+                        border: 1px solid #00aaee;
+                        color: #00aaee;
+                        line-height: 25px;
+                        cursor: pointer;
+                        i {
+                            margin: 0 5px 0 8px;
+                            display: inline-block;
+                            width: 17px;
+                            height: 17px;
+                            border: 1px solid #00aaee;
+                            @include br4(50%);
+                            text-align: center;
+                            vertical-align: middle;
+                            line-height: 16px;
+                            font-weight: bolder;
+                        }
+                        span {
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .message-paging {
+                    margin: 20px 0;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    color: #999;
+                    span {
+                        display: inline-block;
+                        padding: 5px 10px;
+                        cursor: pointer;
+                    }
+                    .message-paging-top {
+                        border: 1px solid #F2F2F2;
+                        &:hover {
+                            border: 1px solid #00aaee;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cover,
+.cover-alter,.cover-sell,.cover-sold {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -150px;
+    z-index: 4;
+    width: 600px;
+    height: 300px;
+    background: #fff;
+    border: 1px solid #999;
+    .cover-top, .cover-alter-top {
+        width: 100%;
+        height: 40px;
+        background: #00aaee;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        line-height: 40px;
+        span {
+            float: right;
+            margin-right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+    ul {
+        overflow: hidden;
+        padding: 25px 25px 0 25px;
+        .cover-row, .cover-alter-row {
+            float: left;
+            overflow: hidden;
+            margin: 0 30px 20px 0;
+            .sky {
+                float: left;
+                width: 14px;
+                height: 30px;
+            }
+            span {
+                float: left;
+                font-size: 14px;
+                color: #333;
+                width: 60px;
+                line-height: 30px;
+                text-align: right;
+            }
+            em{
+                float: left;
+                width: 70px;
+                font-style: normal;
+                font-size: 14px;
+                color: #00aaee;
+                line-height: 30px;
+                text-align: center;
+                cursor: pointer;
+            }
+            i {
+                float: left;
+                margin-top: 10px;
+                margin-right: 5px;
+                color: #FF000D;
+                font-size: 20px;
+                line-height: 14px;
+            }
+            select {
+                float: left;
+                padding: 0 10px;
+                width: 180px;
+                height: 30px;
+                line-height: 30px;
+                border: 1px solid #999;
+            }
+            input{
+                margin-left: 10px;
+                float: left;
+                padding: 0 10px;
+                width: 158px;
+                height: 30px;
+                line-height: 30px;
+                border: 1px solid #999;
+                color: #666;
+            }
+        }
+        .cover-row:nth-child(2n),
+        .cover-alter-row:nth-child(2n) {
+            margin: 0 0 20px 0;
+        }
+    }
+    .tips,
+    .tips-alter {
+        padding: 0 20px 20px 20px;
+        color: #999;
+    }
+    .tips.h,
+    .tips-alter.h {
+        color: #FF000D;
+    }
+    .cover-bottom,
+    .cover-alter-bottom {
+        padding: 0 25px;
+        text-align: right;
+        font-size: 14px;
+        color: #00aaee;
+        i {
+            margin: 0 15px;
+        }
+        em {
+            padding: 5px 10px;
+            font-style: normal;
+            cursor: pointer;
+            border: 1px solid #fff;
+            cursor: pointer;
+            &:hover {
+                border: 1px solid #00aaee;
+            }
+        }
+        
+    }
+    .cover-alter-sell{
+        margin-top: -10px;
+    }
+}

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="font/iconfont.css">
 </head>
 
-<body>
+<body onload="scrollload()">
 <header>
     <div class="header-top"></div>
     <div class="header-center">
@@ -480,4 +480,18 @@
     $(function() {
         $(".cart").addClass("h").siblings("nav a").removeClass("h");
     })
+    
+    function scrollload(){
+        var w_h=$(window).height();
+        var a_h=$(".a").offset().top;
+        var b_h=$(".b").offset().top;
+        if(b_h>a_h+100){
+            $(".close").css({"position":"relative"});
+        }else{
+            $(".close").css({"position":"fixed"});
+            if(a_h<w_h){
+				$(".close").css({"position":"relative"});
+			}
+        }
+    }
 </script>

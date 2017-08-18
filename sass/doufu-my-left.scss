@@ -1,0 +1,88 @@
+@import "base";
+.my-profile-left {
+        float: left;
+        width: 200px;
+        height: 940px;
+        background: #fff;
+        .my-profile-left-head {
+            width: 200px;
+            height: 140px;
+            border-bottom: 1px solid #ccc;
+            #addCommodityIndex {
+                position: relative;
+                overflow: hidden;
+                margin: 0 auto;
+                margin-top: -50px;
+                width: 100px;
+                height: 100px;
+                @include br4(50%);
+                &:hover {
+                    .logo-cover {
+                        bottom: 0;
+                    }
+                }
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+                .logo-cover {
+                    position: absolute;
+                    bottom: -100px;
+                    left: 0;
+                    width: 100px;
+                    height: 50px;
+                    background: rgba(0, 0, 0, 0.5);
+                    text-align: center;
+                    transition: bottom 0.5s linear;
+                    .avatar {
+                        position: relative;
+                        font-size: 12px;
+                        color: #fff;
+                        line-height: 40px;
+                        cursor: pointer;
+                        input {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            opacity: 0;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .my-profile-left-name {
+                margin-top: 6px;
+                text-align: center;
+                color: #666;
+                font-size: 14px;
+            }
+        }
+        .my-profile-left-nav {
+            padding: 0 15px;
+            width: 170px;
+            height: auto;
+            .my-profile-left-nav-big{
+                margin: 20px 0 0 58px;
+                font-size: 14px;
+                color: #333;
+                a {
+                    margin-top: 10px;
+                    display: block;
+                }
+                .my-profile-left-nav-small{
+                    font-size: 12px;
+                    color: #999;
+                    a {
+                        margin-top: 10px;
+                        display: block;
+                        color: #999;
+                    }
+                    a.h {
+                        color: #00aaee;
+                        font-size: 12px;
+                    }
+                }
+            }
+            
+        }
+    }

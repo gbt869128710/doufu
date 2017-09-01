@@ -119,6 +119,11 @@
         </li>
         <li class="my-profile-left-nav-big">
             <a href="">发票管理</a>
+            <div class="my-profile-left-nav-small">
+                <a href="">发票索取</a>
+                <a href="">发票列表</a>
+                <a href="">信息管理</a>
+            </div>
         </li>
         <li class="my-profile-left-nav-big">
             <a href="">产品管理</a>
@@ -140,270 +145,575 @@
                 <p class="column"></p>
             </div>
             <div class="my-profile-right-bottom">
+                <div class="menu">
+                    <span class="subnav">发票索取</span>
+                    <span class="subnav">发票列表</span>
+                    <span class="subnav">信息管理</span>
+                </div>
                 <div class="center-perfect">
-                    <select name="" id="">
-                        <option value="">三个月内</option>
-                        <option value="">半年内</option>
-                    </select>
-                    <div class="refund-column">
-                        <span class="refund-column-name">申请人</span>
-                        <span class="refund-column-name">地址</span>
-                        <select name="" id="">
-                            <option value="">发票类型</option>
-                            <option value="">公司</option>
-                            <option value="">个人</option>
-                        </select>
-                        <span class="refund-column-name">订单信息</span>
-                        <span class="refund-column-name">操作</span>
+                    <div class="ask">
+                        <table class="claim">
+                           <thead>
+                                 <tr>
+                                    <td><i class="choose-all">&#xe63f;</i>全选</td>
+                                    <td>订单编号</td>
+                                    <td>服务名称</td>
+                                    <td>服务商</td>
+                                    <td>服务实付金额</td>
+                                    <td>可开票金额</td>
+                                    <td>服务完成时间</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><i class="choose">&#xe63f;</i></td>
+                                    <td>
+                                        <span>36659587421548</span>
+                                    </td>
+                                    <td>
+                                        <span>继续教育学时</span><br/>
+                                        <span>电子信息</span>
+                                    </td>
+                                    <td>
+                                        <span>黄兴-笃信教育</span>
+                                    </td>
+                                    <td>
+                                        <span>￥<span>2300.00</span></span>
+                                    </td>
+                                    <td>
+                                        <em>￥<em>2300.00</em></em>
+                                    </td>
+                                    <td>
+                                        <span><span>2017-08-09</span>&nbsp;&nbsp;<span>18:22:36</span></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="choose">&#xe63f;</i></td>
+                                    <td>
+                                        <span>36659587421548</span>
+                                    </td>
+                                    <td>
+                                        <span>继续教育学时</span><br/>
+                                        <span>电子信息</span>
+                                    </td>
+                                    <td>
+                                        <span>黄兴-笃信教育</span>
+                                    </td>
+                                    <td>
+                                        <span>￥<span>2300.00</span></span>
+                                    </td>
+                                    <td>
+                                        <em>￥<em class="money">2300.00</em></em>
+                                    </td>
+                                    <td>
+                                        <span><span>2017-08-09</span>&nbsp;&nbsp;<span>18:22:36</span></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="message-paging">
+                            <span class="message-paging-prev message-paging-top">上一页</span>
+                            <span>第1页</span>
+                            <span class="message-paging-next message-paging-top">下一页</span>
+                            <span>共8页</span>
+                        </div>
+                        <div class="money-all">
+                            <h4>已选总金额：<i><i class="cast">2300</i>.00元</i></h4>
+                            <h4>（可开票总金额：<em><span>4600</span>.00元</em>）</h4>
+                        </div>
+                        <div class="money-all">
+                            <h4>待开票金额：<u><u>2300</u>.00元</u></h4>
+                            <h4>（待开票金额 = 已选金额：￥<span>2300</span>.00 - 欠票金额：￥<span>0</span>00）</h4>
+                        </div>
+                        <div class="send">
+                            <input type="button" value="索取发票" class="extort">
+                        </div>
                     </div>
-                    <ul class="advices">
-                        <li class="discuss-center" data="0">
-                            <ul class="discuss-line-top">
-                                <li class="discuss-line-center">
-                                    <div class="review">
-                                        <div class="review-right">
-                                        <p >
-                                    买家：<i>1892***3625</i></p>
-                                        <span class="review-right-time">[2017-12-11  10:20:30]</span>
-                                        <div class="review-right-add-all">
-                                        </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="discuss-line-center">江苏省南京市鼓楼区洪武路北江苏科技大厦A座18H
-                                </li>
-                                <li class="discuss-line-center">
-                                    公司
-                                </li>
-                                <li class="discuss-line-center">
-                                    <p><i>公司，法人，注册地址变更</i><br/>
-                                    <span>类型：电子信息</span><br/><em>1000.00</em>&nbsp;&nbsp;元</p>
-                                </li>
-                                <li class="discuss-line-center">
-                                    <input type="button" class="issue" value="同意开具">
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        <li class="discuss-center" data="1">
-                            <ul class="discuss-line-top">
-                                <li class="discuss-line-center">
-                                    <div class="review">
-                                        <div class="review-right">
-                                        <p >
-                                    买家：<i>1892***3625</i></p>
-                                        <span class="review-right-time">[2017-12-11  10:20:30]</span>
-                                        <div class="review-right-add-all">
-                                        </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="discuss-line-center">江苏省南京市鼓楼区洪武路北江苏科技大厦A座18H
-                                </li>
-                                <li class="discuss-line-center">
-                                    个人
-                                </li>
-                                <li class="discuss-line-center">
-                                    <p><i>公司，法人，注册地址变更</i><br/>
-                                    <span>类型：电子信息</span><br/><em>1000.00</em>&nbsp;&nbsp;元</p>
-                                </li>
-                                <li class="discuss-line-center">
-                                    <input type="button" class="issue" value="同意开具">
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        <li class="discuss-center" data="2">
-                            <ul class="discuss-line-top">
-                                <li class="discuss-line-center">
-                                    <div class="review">
-                                        <div class="review-right">
-                                        <p >
-                                    买家：<i>1892***3625</i></p>
-                                        <span class="review-right-time">[2017-12-11  10:20:30]</span>
-                                        <div class="review-right-add-all">
-                                        </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="discuss-line-center">江苏省南京市鼓楼区洪武路北江苏科技大厦A座18H
-                                </li>
-                                <li class="discuss-line-center">
-                                    个人
-                                </li>
-                                <li class="discuss-line-center">
-                                    <p><i>公司，法人，注册地址变更</i><br/>
-                                    <span>类型：电子信息</span><br/><em>1000.00</em>&nbsp;&nbsp;元</p>
-                                </li>
-                                <li class="discuss-line-center">
-                                    <input type="button" class="issue" value="同意开具">
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        <li class="discuss-center" data="3">
-                            <ul class="discuss-line-top">
-                                <li class="discuss-line-center">
-                                    <div class="review">
-                                        <div class="review-right">
-                                        <p >
-                                    买家：<i>1892***3625</i></p>
-                                        <span class="review-right-time">[2017-12-11  10:20:30]</span>
-                                        <div class="review-right-add-all">
-                                        </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="discuss-line-center">江苏省南京市鼓楼区洪武路北江苏科技大厦A座18H
-                                </li>
-                                <li class="discuss-line-center">
-                                    公司
-                                </li>
-                                <li class="discuss-line-center">
-                                    <p><i>公司，法人，注册地址变更</i><br/>
-                                    <span>类型：电子信息</span><br/><em>1000.00</em>&nbsp;&nbsp;元</p>
-                                </li>
-                                <li class="discuss-line-center">
-                                    <input type="button" class="issue" value="同意开具">
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <div class="ask">
+                        <h4 class="verify">发票索取>确认发票与地址信息</h4>
+                        <p>您选取了 <i>1</i> 条单据开具发票(若选中多条订单，订单金额将合并开具在一张票据中)</p>
+                        <p><span>已选总金额：<i>2300<i>.00元</i></i></span></p>
+                        <p class="rise"><span>发票抬头：</span><em>暂无，请点击编辑按钮添加</em></p>
+                        <p class="rise"><span>发票抬头：</span><em>南京笃信教育科技有限公司</em><em>开具类型 ：<span>企业</span></em><em>发票类型：<span>增值税普通发票</span></em></p>
+                        <p><cite class="edit">+编辑</cite><b>提示：每个豆腐账号只能设置1个有效的发票信息，不得随意修改。</b></p>
+                        <p><span>发票性质：</span><input type="radio" name="sem" id="zhi" checked><label for="zhi">纸质</label><input type="radio" name="sem" id="dian"><label for="dian">电子</label></p>
+                        <p><span>寄送地址（将以快递（免费）方式寄送给您）</span></p>
+                        <table class="code codes">
+                           <thead>
+                                 <tr>
+                                    <td>收件人姓名</td>
+                                    <td>电话号码</td>
+                                    <td>地址</td>
+                                    <td>邮编</td>
+                                    <td>操作</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><i class="use">&#xe63f;</i><u>小路</u></td>
+                                    <td>
+                                        <span>13057612112</span>
+                                    </td>
+                                    <td>
+                                        <span>江苏省南京市鼓楼区鼓楼区山西路颐和商厦13H</span>
+                                    </td>
+                                    <td>
+                                        <span>5000000</span>
+                                    </td>
+                                    <td>
+                                        <cite>默认地址</cite>
+                                        <b class="redact">编辑</b>
+                                        <b class="remove">删除</b>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="add">+添加地址</div>
+                        <div class="send">
+                            <input type="button" value="取消" class="cancel">
+                            <input type="button" value="索取" class="exact">
+                        </div>
+                        <p><span>请选择地址，确认发票信息后点击索取按钮进行索取，您还可以到信息管理页面申请修改您的发票信息。</span></p>
+                    </div>
+                </div>
+                
+                <div class="center-perfect">
+                    <div class="list">
+                        <table class="code">
+                               <thead>
+                                     <tr>
+                                        <td>发票金额</td>
+                                        <td>发票抬头</td>
+                                        <td>发票性质</td>
+                                        <td>发票类型</td>
+                                        <td>状态</td>
+                                        <td>发生时间</td>
+                                        <td>操作</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <cite><span>￥</span>500.00</cite>
 
-                    <div class="message-paging">
-                        <span class="message-paging-prev message-paging-top">上一页</span>
-                        <span>第1页</span>
-                        <span class="message-paging-next message-paging-top">下一页</span>
-                        <span>共8页</span>
+                                        </td>
+                                        <td>
+                                            <span>沈威</span>
+                                        </td>
+                                        <td>
+                                            <span>纸质</span>
+                                        </td>
+                                        <td>
+                                            <span>增值税普通发票</span>
+                                        </td>
+                                        <td>
+                                            <cite>正在开票</cite>
+                                        </td>
+                                        <td>
+                                            <span>2017-08-29</span>&nbsp;&nbsp;
+                                            <span>19:38:50</span>
+                                        </td>
+                                        <td>
+                                            <b class="details">详情</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <cite><span>￥</span>500.00</cite>
+
+                                        </td>
+                                        <td>
+                                            <span>沈威</span>
+                                        </td>
+                                        <td>
+                                            <span>纸质</span>
+                                        </td>
+                                        <td>
+                                            <span>增值税普通发票</span>
+                                        </td>
+                                        <td>
+                                            <cite>已寄出</cite>
+                                        </td>
+                                        <td>
+                                            <span>2017-08-29</span>&nbsp;&nbsp;
+                                            <span>19:38:50</span>
+                                        </td>
+                                        <td>
+                                            <b class="details">详情</b>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                        <div class="message-paging">
+                            <span class="message-paging-prev message-paging-top">上一页</span>
+                            <span>第1页</span>
+                            <span class="message-paging-next message-paging-top">下一页</span>
+                            <span>共8页</span>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <h4 class="verify">发票列表>发票详情</h4>
+                        <p>开票明细（您的发票申请分<big>1</big>张发票开具，开票总额 <big>￥<big>2300</big>.00</big>。）</p>
+                        
+                        <table class="plan">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>发票号</span>
+                                        
+                                    </td>
+                                    <td>
+                                        <i>150400673083</i>
+                                    </td>
+                                    <td>
+                                        <span>申请时间</span>
+                                        
+                                    </td>
+                                    <td>
+                                        <i>2017-08-29</i>&nbsp;
+                                        <i>19:38:50</i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>发票金额</span>
+                                        
+                                    </td>
+                                    <td>
+                                        <cite>￥<cite>2300</cite>.00</cite>
+                                    </td>
+                                    <td>
+                                        <span>收件人</span>
+                                        
+                                    </td>
+                                    <td>
+                                        <i>小路</i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>发票性质</span>
+                                        
+                                    </td>
+                                    <td>
+                                        <i>纸质发票</i>
+                                    </td>
+                                    <td>
+                                        <span>收取地址</span>
+                                        
+                                    </td>
+                                    <td>
+                                        <i>江苏省南京市鼓楼区鼓楼区山西路颐和商厦13H</i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>发票状态</span>
+                                        
+                                    </td>
+                                    <td>
+                                        <i>正在开票</i>
+                                    </td>
+                                    <td>
+                                        <span>邮编</span>
+                                        
+                                    </td>
+                                    <td>
+                                        <i>200000</i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>发票类型</span>
+                                        
+                                    </td>
+                                    <td>
+                                        <i>增值税普通发票</i>
+                                    </td>
+                                    <td>
+                                        <span>联系电话</span>
+                                        
+                                    </td>
+                                    <td>
+                                        <i>13057612112</i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>发票抬头</span>
+                                        
+                                    </td>
+                                    <td>
+                                        <cite>沈威</cite>
+                                    </td>
+                                    <td>
+                                        <span>物流公司</span>
+                                        
+                                    </td>
+                                    <td>
+                                        <u>EMS</u>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>收取方式</span>
+                                        
+                                    </td>
+                                    <td>
+                                        <u>邮寄</u>
+                                    </td>
+                                    <td>
+                                        <span>快递编号</span>
+                                        
+                                    </td>
+                                    <td>
+                                        <cite>12342234323442</cite>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>关联订单（您的发票申请关联<big>1</big>个订单，开票总额<big>￥<big>2300</big>.00</big>。）</p>
+                        <table class="code">
+                               <thead>
+                                     <tr>
+                                        <td>订单编号</td>
+                                        <td>服务名称</td>
+                                        <td>服务商</td>
+                                        <td>服务实付金额</td>
+                                        <td>可开票金额</td>
+                                        <td>服务支付时间</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span>36659587421548</span>
+                                        </td>
+                                        <td>
+                                            <span>继续教育学时</span><br/>
+                                        <span>电子信息</span>
+                                        </td>
+                                        <td>
+                                            <span>黄兴-笃信教育</span>
+                                        </td>
+                                        <td>
+                                            <span>￥<span>2300</span>.00</span>
+                                        </td>
+                                        <td>
+                                            <cite>￥<span>2300</span>.00</cite>
+                                        </td>
+                                        <td>
+                                            <span>2017-08-29</span>&nbsp;&nbsp;
+                                            <span>19:38:50</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="center-perfect">
+                    <div class="manage">
+                        <h4 class="verify">发票索取>填写发票信息</h4>
+                        <p><em>提示：每个豆腐账号只能设置1个有效的发票信息，不得随意修改。<br/>如果想要修改发票申请信息，则可能需要等待数日，如需加急请电话联系，电话：025-1212121</em></p>
+                        <ul class="hunt-aspect">
+                            <li class="hunt-aspect-manage">
+                                <span>发票类型：</span><i>*</i>
+                                <input type="radio" name="sex" checked>
+                                <em>个人</em>
+                                <input type="radio" name="sex">
+                                <em>企业</em>
+                            </li>
+                            <li class="hunt-aspect-manage">
+                                <span>发票抬头：</span><i>*</i><input type="text" placeholder="请填写您营业执照上的全称">
+                                <p>发票抬头不为空!</p>
+                            </li>
+                            <li class="hunt-aspect-manage person">
+                                <span>发票类型：</span><i>*</i>
+                                <input type="radio" name="sen" checked>
+                                <u>增值税普通发票</u>
+                                <em class="turn firm">
+                                    <input type="radio" name="sen" class="wy">
+                                    <u>增值税专用发票</u>
+                                </em>
+                            </li>
+                            <li class="hunt-aspect-manage firm">
+                                <span>税务登记证：</span><i>*</i><input type="text" placeholder="请填写税务登记证">
+                                <p>税务登记证不为空!</p>
+                            </li>
+                            <li class="hunt-aspect-manage private">
+                                <span>基本开户银行名称：</span><i>*</i><input type="text" placeholder="请填写基本开户银行名称">
+                                <p>基本开户银行名称不为空!</p>
+                            </li>
+                            <li class="hunt-aspect-manage private">
+                                <span>基本开户账号：</span><i>*</i><input type="text" placeholder="请填写基本开户账号">
+                                <p>基本开户账号不为空!</p>
+                            </li>
+                            <li class="hunt-aspect-manage private">
+                                <span>注册场所地址：</span><i>*</i><input type="text" placeholder="请填写注册场所地址">
+                                <p>注册场所地址不为空!</p>
+                            </li>
+                            <li class="hunt-aspect-manage private">
+                                <span>注册固定电话：</span><i>*</i><input type="text" placeholder="请填写注册固定电话" class="phone" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" >
+                                <p>注册固定电话不为空!</p>
+                            </li>
+                            <li class="hunt-aspect-conserve">
+                                <input type="button" value="取消" class="call">
+                                <input type="button" value="保存" class="keep">
+<!--                                             提交申请-->
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="manage">
+                        <p><em>提示：每个豆腐账号只能设置1个有效的发票信息，不得随意修改。<br/>如果想要修改发票申请信息，则可能需要等待数日，如需加急请电话联系，电话：025-1212121</em></p>
+                        <ul class="advices">
+                            <li class="advices-li">已审核通过&#xe63f;</li>
+                            <li class="advices-li">审核中...</li>
+                        </ul>
+                        <table class="mold">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>发票类型：</span>
+                                        
+                                    </td>
+                                    <td>
+                                        企业
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>发票抬头：</span>
+                                        
+                                    </td>
+                                    <td>
+                                        增值税专用发票
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>发票类型：</span>
+                                        
+                                    </td>
+                                    <td>
+                                        南京笃信教育
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>税务登记证：</span>
+                                        
+                                    </td>
+                                    <td> 54525bbdd77hhh44
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>基本开户银行名称：</span>
+                                        
+                                    </td>
+                                    <td>
+                                        建设银行
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>基本开户账号：</span>
+                                        
+                                    </td>
+                                    <td> 458214568412456110
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>注册场所地址：</span>
+                                        
+                                    </td>
+                                    <td>
+                                        南京鼓楼区一盒面馆
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>注册固定电话：</span>
+                                        
+                                    </td>
+                                    <td>
+                                        400-52145451
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="send">
+                            <input type="button" value="申请修改" class="visa">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <div class="cover-avatar-two">
-        <p class="cover-top">更新进程
+    <div class="cover-avatar">
+        <p class="cover-top">添加收件地址
             <span>&#xe62f;</span></p>
         <div class="cover-bottom">
-            <div class="cover-top-flow-line-all">
-                <div class="cover-top-flow-line"></div>
-                <div class="cover-top-flow-line"></div>
-            </div>
-            <div class="cover-top-flow">
-                <div class="cover-top-flow-one h">
-                    <p>1</p>
-                    <span>上传发票凭证</span>
-                </div>
-
-                <div class="cover-top-flow-one">
-                    <p>2</p>
-                    <span>上传物流凭证</span>
-                </div>
-
-                <div class="cover-top-flow-one">
-                    <p>3</p>
-                    <span>发票开具成功</span>
-                </div>
-            </div>
-            <div class="cover-bottom-center">
-                <p class="balance">您当前正在更新发票开具进程：</p>
-                <div class="balance">
-                    <span>请上传发票凭证：</span>
+            <ul class="cover-bottom-center">
+                <li class="cover-bottom-center-li">
+                    <b>收件人:</b>
                     <i>*</i>
-                    <div class="permit-all">
-                <p class="plus">+</p>
-                <p class="plus-file">点此上传</p>
-                <div id="addCommodityIndex">
-                    <div class="input-group row">
-                        <div class="col-sm-9 big-photo">
-                            <div id="preview-permit">
-                                <img id="imghead-permit" border="0" src="" width="80" height="80" onclick="$('#previewImg-permit').click();">
-                             </div>         
-                            <input type="file" onchange="previewImage(this,'imghead-permit')" style="display: none;" id="previewImg-permit">
+                    <input type="text" class="pick">
+                    <p>请填写收件人姓名</p>
+                </li>
+                <li class="cover-bottom-center-li">
+                    <b>联系方式:</b>
+                    <i>*</i>
+                    <input type="text" class="pick">
+                    <p>请填写联系方式</p>
+                </li>
+                <li class="cover-bottom-center-li">
+                    <b>邮政编码:</b>
+                    <input type="text">
+                </li>
+                <li class="cover-bottom-center-li">
+                    <b>所在地区:</b>
+                    <i>*</i>
+                    <div class="container">
+                        <div class="docs-methods">
+                            <form class="form-inline">
+                                <div id="distpicker">
+                                    <div class="form-group">
+                                        <div style="position: relative;">
+                                            <input id="city-picker3" class="form-control" readonly type="text" value="江苏省/南京市/鼓楼区" data-toggle="city-picker">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </div>
-            </div>
-                    <span>小贴士：请上传发票照片，格式支持JPEG，JPG，png格式</span>
-                </div>
-                <p class="cover-bottom-btn"><em class="abolish-two">取消</em><i></i><em class="confirm">确定</em></p>
-            </div>
-        </div>
-<div class="cover-bottom-two">
-            <div class="cover-top-flow-line-all">
-                <div class="cover-top-flow-line"></div>
-                <div class="cover-top-flow-line"></div>
-            </div>
-            <div class="cover-top-flow">
-                <div class="cover-top-flow-one h">
-                    <p>1</p>
-                    <span>上传发票凭证</span>
-                </div>
-
-                <div class="cover-top-flow-one h">
-                    <p>2</p>
-                    <span>上传物流凭证</span>
-                </div>
-
-                <div class="cover-top-flow-one">
-                    <p>3</p>
-                    <span>发票开具成功</span>
-                </div>
-            </div>
-            <div class="cover-bottom-center">
-                <p class="balance">您当前正在更新发票开具进程：</p>
-                <div class="balance">
-                    <span>请上传发票凭证：</span>
+                </li>
+                <li class="cover-bottom-center-li">
+                    <b>街道:</b>
+                    <input type="text">
+                </li>
+                <li class="cover-bottom-center-li">
+                    <b>具体地址:</b>
                     <i>*</i>
-                    <div class="permit-all">
-                <p class="plus">+</p>
-                <p class="plus-file">点此上传</p>
-                <div id="addCommodityIndex">
-                    <div class="input-group row">
-                        <div class="col-sm-9 big-photo">
-                            <div id="preview-permit">
-                                <img id="imghead-permit" border="0" src="" width="80" height="80" onclick="$('#previewImg-permit').click();">
-                             </div>         
-                            <input type="file" onchange="previewImage(this,'imghead-permit')" style="display: none;" id="previewImg-permit">
-                        </div>
-                    </div>
-                </div>
-            </div>
-                    <span>小贴士：请上传发票照片，格式支持JPEG，JPG，png格式</span>
-                </div>
-                <p class="cover-bottom-btn"><em class="abolish-two">取消</em><i></i><em class="ensure">确定</em></p>
-            </div>
+                    <input type="text" class="pick">
+                    <p>请填写具体地址</p>
+                </li>
+                <li class="cover-bottom-center-li">
+                    <div class="work"><u class="suppose">&#xe63f;</u><cite>设为默认地址</cite></div>
+                    <div class="cover-bottom-btn"><em class="abolish">取消</em><em class="ensure">确定</em></div>
+                </li>
+            </ul>
         </div>
-
-        <div class="cover-bottom-three">
-            <div class="cover-top-flow-line-all">
-                <div class="cover-top-flow-line"></div>
-                <div class="cover-top-flow-line"></div>
-            </div>
-            <div class="cover-top-flow">
-                <div class="cover-top-flow-one h">
-                    <p>1</p>
-                    <span>上传发票凭证</span>
-                </div>
-
-                <div class="cover-top-flow-one h">
-                    <p>2</p>
-                    <span>上传物流凭证</span>
-                </div>
-
-                <div class="cover-top-flow-one h">
-                    <p>3</p>
-                    <span>发票开具成功</span>
-                </div>
-            </div>
-            <div class="cover-bottom-center">
-                   <div class="prosperity">
-                    <p>&#xe614;
-                    </p>
-                    <p>您已成功提交提现申请，我们将在7个工作日内对您的申请进行处理，请耐心等待</p>
-                    <p></p>
-                   </div>
-            </div>
+    </div>
+    <div class="cover-avatar-two">
+        <p class="cover-top">申请修改发票信息
+            <span>&#xe62f;</span></p>
+        <div class="cover-bottom">
+                <h4>您已提交发票申请信息，可能需要等待数日等待审核，如需加急请电话联系，电话：025-1212121</h4>
+                <h4>请阅读<span class="second">5</span>秒</h4>
+                <div class="cover-bottom-btn"><em class="abolish-two">取消</em><em class="ensure-two">关闭窗口</em></div>
         </div>
     </div>
     <!--footer-->
@@ -620,11 +930,8 @@
 <!--footerend-->
 <script src="js/jquery1.8.3.min.js"></script>
 <script src="js/doufu-facilitator-service.js"></script>
-<script>
-    $(function() {
-        $(".my-profile-left-nav-big").eq(5).find("a").css("color","#00aaee");
-    })
-</script>
+<script src="js/city-picker.data.js"></script>
+<script src="js/city-picker.js"></script>
 <script>
     //图片上传预览    IE是用了滤镜。
     function previewImage(file, imgid) {

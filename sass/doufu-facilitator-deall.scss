@@ -1,0 +1,103 @@
+@import "base";
+.my-profile-top {
+        width: 100%;
+        height: 60px;
+        background: #f5f5f5;
+    }
+.my-profile {
+    margin: 0px auto 60px auto;
+    width: 1200px;
+    
+    .my-profile-right {
+        position: relative;
+        float: right;
+        padding: 20px;
+        width: 950px;
+        min-height: 900px;
+        background: #fff;
+        border-left: 10px solid #f5f5f5;
+        .my-profile-right-top {
+            width: 950px;
+            height: 20px;
+            .column {
+                float: left;
+                font-size: 14px;
+                color: #999;
+            }
+            .column:nth-child(2) {
+                float: right;
+                margin-top: 9px;
+                width: 890px;
+                border-bottom: 1px solid #999;
+            }
+        }
+        .my-profile-right-bottom {
+            .center-perfect {
+                display: none;
+                margin-top: 20px;
+                float: left;
+                width: 950px;
+                .advices {
+                    margin-bottom: 10px;
+                    width: 950px;
+                    background: #fff;
+                    
+                    .check-goods {
+                        overflow: hidden;
+                        width: calc(100% - 22px);
+                        padding: 0 10px;
+                        border: 1px solid #00aaee;
+                        background: #fff;
+                        @include br4(5px);
+                        color: #999;
+                        font-size: 12px;
+                        text-align: left;
+                        .order-form {
+                            height: 40px;
+                            border-bottom: 1px solid #999999;
+                            line-height: 40px;
+                            text-indent: 15px;
+                        }
+                        .order-form-flow {
+                            margin-top: 30px;
+                            width: 100%;
+                            li {
+                                margin: 0 0 0 20px;
+                                height: 65px;
+                                border-left: 1px solid #999;
+                                .order-form-flow-circle {
+                                    margin-left: -3px;
+                                    width: 5px;
+                                    height: 5px;
+                                    background: #999;
+                                    @include br4(50%);
+                                }
+                                p {
+                                    margin: -20px 0 0 20px;
+                                    width: 80%;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    line-height: 16px;
+                                }
+                                .order-form-flow-time {
+                                    display: block;
+                                    margin: 0 0 0 20px;
+                                }
+                            }
+                            li:first-of-type {
+                                color: #00aaee;
+                                .order-form-flow-circle {
+                                    background: #00aaee;
+                                }
+                            }
+                            li:last-of-type {
+                                border-left: 1px solid #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
